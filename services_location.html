@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Service Locations | Super Pest Control Services
+    </title>
+
+    <link rel="icon" type="image/png" href="images/Logooo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* =====================================================
+           SERVICE LOCATION PAGE
+        ===================================================== */
+
+        .location-page {
+            background: #f7f9f6;
+            min-height: 100vh;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .location-hero {
+
+            position: relative;
+
+            padding: 120px 20px 90px;
+
+            text-align: center;
+
+            color: #ffffff;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(135deg,
+                    #123c2b,
+                    #286b4a);
+
+        }
+
+
+        .location-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 420px;
+            height: 420px;
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            border-radius: 50%;
+
+            top: -230px;
+            right: -100px;
+
+        }
+
+
+        .location-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 330px;
+            height: 330px;
+
+            border: 1px solid rgba(255, 255, 255, 0.10);
+
+            border-radius: 50%;
+
+            bottom: -210px;
+            left: -120px;
+
+        }
+
+
+        .location-hero-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 850px;
+
+            margin: auto;
+
+        }
+
+
+        .location-label {
+
+            display: inline-block;
+
+            padding: 8px 18px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(255, 255, 255, 0.12);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.18);
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .location-hero h1 {
+
+            margin: 0 0 22px;
+
+            font-size:
+                clamp(38px, 6vw, 68px);
+
+            line-height: 1.08;
+
+            font-weight: 800;
+
+        }
+
+
+        .location-hero h1 span {
+
+            color: #b8e7c8;
+
+        }
+
+
+        .location-hero p {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color:
+                rgba(255, 255, 255, 0.84);
+
+        }
+
+
+        /* =====================================================
+           LOCATION SECTION
+        ===================================================== */
+
+        .locations-section {
+
+            max-width: 1250px;
+
+            margin: auto;
+
+            padding:
+                80px 20px 100px;
+
+        }
+
+
+        .locations-heading {
+
+            text-align: center;
+
+            max-width: 750px;
+
+            margin: 0 auto 50px;
+
+        }
+
+
+        .locations-heading span {
+
+            display: block;
+
+            margin-bottom: 12px;
+
+            color: #286b4a;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        .locations-heading h2 {
+
+            margin: 0 0 15px;
+
+            color: #173e2e;
+
+            font-size:
+                clamp(30px, 5vw, 48px);
+
+            line-height: 1.15;
+
+        }
+
+
+        .locations-heading p {
+
+            margin: 0;
+
+            color: #617067;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           LOCATION GRID
+        ===================================================== */
+
+        .locations-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 22px;
+
+        }
+
+
+        /* =====================================================
+           LOCATION CARD
+        ===================================================== */
+
+        .location-card {
+
+            position: relative;
+
+            display: block;
+
+            height: 300px;
+
+            overflow: hidden;
+
+            border-radius: 20px;
+
+            text-decoration: none;
+
+            background: #dfe7e1;
+
+            box-shadow:
+                0 12px 35px rgba(20, 55, 40, 0.08);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
+
+        }
+
+
+        .location-card:hover {
+
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                0 22px 45px rgba(20, 55, 40, 0.16);
+
+        }
+
+
+        .location-card img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition:
+                transform 0.6s ease;
+
+        }
+
+
+        .location-card:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+
+        /* =====================================================
+           CARD OVERLAY
+        ===================================================== */
+
+        .location-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            padding: 25px;
+
+            background:
+                linear-gradient(to top,
+                    rgba(5, 30, 20, 0.90),
+                    rgba(5, 30, 20, 0.25),
+                    rgba(5, 30, 20, 0));
+
+        }
+
+
+        .location-overlay h3 {
+
+            margin: 0 0 7px;
+
+            color: #ffffff;
+
+            font-size: 22px;
+
+            font-weight: 750;
+
+        }
+
+
+        .location-overlay span {
+
+            color:
+                rgba(255, 255, 255, 0.78);
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition:
+                transform 0.3s ease;
+
+        }
+
+
+        .location-card:hover .location-overlay span {
+
+            transform:
+                translateX(5px);
+
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .location-cta {
+
+            max-width: 1250px;
+
+            margin:
+                0 auto 80px;
+
+            padding:
+                55px 35px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            color: #ffffff;
+
+            background:
+                linear-gradient(135deg,
+                    #174d36,
+                    #2c7652);
+
+            box-sizing: border-box;
+
+        }
+
+
+        .location-cta h2 {
+
+            margin: 0 0 12px;
+
+            font-size:
+                clamp(28px, 4vw, 42px);
+
+        }
+
+
+        .location-cta p {
+
+            max-width: 650px;
+
+            margin:
+                0 auto 25px;
+
+            color:
+                rgba(255, 255, 255, 0.82);
+
+            line-height: 1.7;
+
+        }
+
+
+        .location-cta .btn-light {
+
+            display: inline-block;
+
+            padding:
+                13px 25px;
+
+            border-radius: 8px;
+
+            background: #ffffff;
+
+            color: #174d36;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            transition:
+                transform 0.25s ease;
+
+        }
+
+
+        .location-cta .btn-light:hover {
+
+            transform:
+                translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 1050px) {
+
+            .locations-grid {
+
+                grid-template-columns:
+                    repeat(3, minmax(0, 1fr));
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE / TABLET
+        ===================================================== */
+
+        @media (max-width: 760px) {
+
+            .location-hero {
+
+                padding:
+                    90px 18px 70px;
+
+            }
+
+
+            .location-hero h1 {
+
+                font-size: 42px;
+
+            }
+
+
+            .location-hero p {
+
+                font-size: 16px;
+
+            }
+
+
+            .locations-section {
+
+                padding:
+                    60px 15px 70px;
+
+            }
+
+
+            .locations-heading {
+
+                margin-bottom: 35px;
+
+            }
+
+
+            .locations-grid {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 14px;
+
+            }
+
+
+            .location-card {
+
+                height: 230px;
+
+                border-radius: 16px;
+
+            }
+
+
+            .location-overlay {
+
+                padding: 17px;
+
+            }
+
+
+            .location-overlay h3 {
+
+                font-size: 18px;
+
+            }
+
+
+            .location-overlay span {
+
+                font-size: 11px;
+
+            }
+
+
+            .location-cta {
+
+                margin:
+                    0 15px 60px;
+
+                padding:
+                    40px 22px;
+
+                border-radius: 20px;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 430px) {
+
+            .location-hero {
+
+                padding:
+                    80px 15px 60px;
+
+            }
+
+
+            .location-hero h1 {
+
+                font-size: 36px;
+
+            }
+
+
+            .locations-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+                gap: 10px;
+
+            }
+
+
+            .location-card {
+
+                height: 205px;
+
+                border-radius: 14px;
+
+            }
+
+
+            .location-overlay {
+
+                padding: 14px;
+
+            }
+
+
+            .location-overlay h3 {
+
+                font-size: 16px;
+
+            }
+
+        }
+
+        /* =========================================
+   BLOG PAGE NAVBAR FIX
+========================================= */
+
+        .header {
+            background: #ffffff !important;
+            position: relative;
+            z-index: 10000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar {
+            background: #ffffff !important;
+        }
+
+        /* Navbar links */
+        .nav-links a {
+            color: #173e2e;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #2c7a52;
+        }
+
+        /* More dropdown */
+        .nav-dropdown .more-link {
+            color: #173e2e;
+        }
+
+        /* Book Service button */
+        .nav-btn {
+            background: #1f6846;
+            color: #ffffff !important;
+        }
+
+        .nav-btn:hover {
+            background: #174d36;
+        }
+
+        /* Logo text */
+        .logo-text strong {
+            color: #173e2e;
+        }
+
+        .logo-text small {
+            color: #53635b;
+        }
+
+        /* Mobile menu */
+        .menu-btn {
+            color: #173e2e;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ===================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-mark">
+
+                    <img src="images/logo.png" alt="Super Pest Control">
+
+                </div>
+
+
+                <div class="logo-text">
+
+                    <strong>
+                        SUPER PEST
+                    </strong>
+
+                    <small>
+                        CONTROL SERVICES
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAV LINKS -->
+
+            <div class="nav-links">
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="services.html">
+                    Services
+                </a>
+
+
+                <a href="residential.html">
+                    Residential
+                </a>
+
+
+                <a href="commercial.html">
+                    Commercial
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <!-- MORE -->
+
+                <div class="nav-dropdown">
+
+
+                    <a href="#" class="more-link">
+                        More ▾
+                    </a>
+
+
+                    <div class="dropdown-menu">
+
+
+                        <a href="blog.html">
+                            Blogs
+                        </a>
+
+
+                        <a href="services_location.html" class="active">
+                            Service Location
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+
+            </div>
+
+
+            <!-- BOOK SERVICE -->
+
+            <a href="contact.html" class="nav-btn">
+                Book Service
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button class="menu-btn" id="menuBtn" type="button">
+                ☰
+            </button>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ===================================================== -->
+
+    <main class="location-page">
+
+
+        <!-- =================================================
+             HERO
+        ================================================= -->
+
+        <section class="location-hero">
+
+
+            <div class="location-hero-content">
+
+
+                <span class="location-label">
+                    OUR SERVICE AREAS
+                </span>
+
+
+                <h1>
+
+                    Pest Control
+                    <br>
+
+                    <span>Near You.</span>
+
+                </h1>
+
+
+                <p>
+
+                    Professional pest control services
+                    available across Jaipur and
+                    surrounding areas.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             LOCATIONS
+        ================================================= -->
+
+        <section class="locations-section">
+
+
+            <div class="locations-heading">
+
+
+                <span>
+                    WHERE WE SERVE
+                </span>
+
+
+                <h2>
+                    Our Service Locations
+                </h2>
+
+
+                <p>
+
+                    Find professional pest control
+                    services in your area. Select a
+                    location to get started.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="locations-grid">
+
+
+                <!-- 01 -->
+
+                <a href="ajmer.html?location=ajmer" class="location-card">
+
+                    <img src="images/ajmer.png" alt="Pest Control in Jaipur" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Ajmer
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 02 -->
+
+                <a href="alwar.html?location=alwar" class="location-card">
+
+                    <img src="images/alwar.png" alt="Pest Control in Mansarovar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Alwar
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 03 -->
+
+                <a href="balotra.html?location=balotra" class="location-card">
+
+                    <img src="images/balotra.png" alt="Pest Control in Vaishali Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Balotra
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 04 -->
+
+                <a href="banswara.html?location=banswara" class="location-card">
+
+                    <img src="images/banswara.png" alt="Pest Control in Malviya Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Banswara
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 05 -->
+
+                <a href="baran.html?location=baran" class="location-card">
+
+                    <img src="images/baran.jpg" alt="Pest Control in Jagatpura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Baran
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 06 -->
+
+                <a href="barmer.html?location=location" class="location-card">
+
+                    <img src="images/barmer.jpg" alt="Pest Control in Sanganer" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Barmer
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 07 -->
+
+                <a href="beawer.html?location=beawer" class="location-card">
+
+                    <img src="images/beawar.jpg" alt="Pest Control in Pratap Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Beawer
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 08 -->
+
+                <a href="bharatpur.html?location=bharatpur" class="location-card">
+
+                    <img src="images/bharatpur.jpg" alt="Pest Control in Tonk Road" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Bharatpur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 09 -->
+
+                <a href="bhilwara.html?location=bhilwara" class="location-card">
+
+                    <img src="images/bhilwara.jpg" alt="Pest Control in Raja Park" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Bhilwara
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 10 -->
+
+                <a href="bikaner.html?location=bikaner" class="location-card">
+
+                    <img src="images/bikaner.jpg" alt="Pest Control in C Scheme" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Bikaner
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 11 -->
+
+                <a href="bundi.html?location=bundi" class="location-card">
+
+                    <img src="images/Bundi.jpg" alt="Pest Control in Bani Park" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Bundi
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 12 -->
+
+                <a href="chittoregarh.html?location=chittoregarh" class="location-card">
+
+                    <img src="images/chittorgarh.jpg" alt="Pest Control in Vidhyadhar Nagar"
+                        loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Chittorgarh
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 13 -->
+
+                <a href="churu.html?location=churu" class="location-card">
+
+                    <img src="images/churu.jpg" alt="Pest Control in Jhotwara" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            churu
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 14 -->
+
+                <a href="tonk.html?location=tonk" class="location-card">
+
+                    <img src="images/tonk.jpg" alt="Pest Control in Shastri Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Tonk
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 15 -->
+
+                <a href="dausa.html?location=dausa" class="location-card">
+
+                    <img src="images/dausa.jpg" alt="Pest Control in Murlipura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Dausa
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 16 -->
+
+                <a href="deeg.html" class="location-card">
+
+                    <img src="images/deeg.jpg" alt="Pest Control in Sitapura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Deeg
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 17 -->
+
+                <a href="dholpur.html?location=dholpur" class="location-card">
+
+                    <img src="images/dholpur.jpg" alt="Pest Control in Gopalpura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Dholpur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 18 -->
+
+                <a href="didwana_kuchaman.html?location=didwana kuchaman" class="location-card">
+
+                    <img src="images/didwana.jpg" alt="Pest Control in Sodala" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Didwana Kuchaman
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 19 -->
+
+                <a href="dungarpur.html?location=dungarpur" class="location-card">
+
+                    <img src="images/dungarpur.jpg" alt="Pest Control in Civil Lines" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Dungarpur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 20 -->
+
+                <a href="hanumangarh.html?location=hanumangarh" class="location-card">
+
+                    <img src="images/hanumangarh.jpg" alt="Pest Control in Adarsh Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Hanumangarh
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 21 -->
+
+                <a href="jaipur.html?location=jaipur" class="location-card">
+
+                    <img src="images/jaipur.jpg" alt="Pest Control in Amer" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Jaipur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 22 -->
+
+                <a href="jaisalmer.html?location=jaisalmer" class="location-card">
+
+                    <img src="images/jaisalmer.webp" alt="Pest Control in Kanakpura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Jaisalmer
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 23 -->
+
+                <a href="jalore.html?location=jalore" class="location-card">
+
+                    <img src="images/jalore.jpg" alt="Pest Control in Nirman Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Jalore
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 24 -->
+
+                <a href="jhalawar.html?location=jhalawar" class="location-card">
+
+                    <img src="images/jhalawar.jpg" alt="Pest Control in Durgapura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Jhalawar
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 25 -->
+
+                <a href="jhunjhunu.html?location=Mahesh Nagar" class="location-card">
+
+                    <img src="images/jhunjhunu.avif" alt="Pest Control in Mahesh Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Jhunjhunu
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 26 -->
+
+                <a href="jodhpur.html?location=Khatipura" class="location-card">
+
+                    <img src="images/jodhpur.jpg" alt="Pest Control in Khatipura" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Jodhpur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 27 -->
+
+                <a href="karauli.html?location=Chandpole" class="location-card">
+
+                    <img src="images/karauli.jpg" alt="Pest Control in Chandpole" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Karauli
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 28 -->
+
+                <a href="khairthal_tijara.html?location=Ramganj" class="location-card">
+
+                    <img src="images/tijara.jpg" alt="Pest Control in Ramganj" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Khairthal Tijara
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 29 -->
+
+                <a href="kota.html?location=Johari Bazaar" class="location-card">
+
+                    <img src="images/kota.jpg" alt="Pest Control in Johari Bazaar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Kota
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 30 -->
+
+                <a href="kotputli_behror.html" class="location-card">
+
+                    <img src="images/kotputli.jpg" alt="Pest Control in MI Road" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Kotputli Behror
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 31 -->
+
+                <a href="nagaur.html" class="location-card">
+
+                    <img src="images/nagaur.jpg" alt="Pest Control in Transport Nagar"
+                        loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Nagaur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 32 -->
+
+                <a href="udaipur.html" class="location-card">
+
+                    <img src="images/udaipur.jpg" alt="Pest Control in Muhana" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Udaipur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 33 -->
+
+                <a href="pali.html" class="location-card">
+
+                    <img src="images/pali.jpg" alt="Pest Control in Kalwar Road" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Pali
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 34 -->
+
+                <a href="phalodi.html" class="location-card">
+
+                    <img src="images/phalodi.png" alt="Pest Control in Ajmer Road" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Phalodi
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 35 -->
+
+                <a href="pratapgargh.html" class="location-card">
+
+                    <img src="images/pratapgarh.jpg" alt="Pest Control in Gandhi Path" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Pratapgargh
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 36 -->
+
+                <a href="rajsamand.html" class="location-card">
+
+                    <img src="images/rajsamand.jpg" alt="Pest Control in Patrakar Colony"
+                        loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Rajsamand
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 37 -->
+
+                <a href="salumbar.html" class="location-card">
+
+                    <img src="images/salumbar.avif" alt="Pest Control in Barkat Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Salumbar
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 38 -->
+
+                <a href="sawai_madhopur.html" class="location-card">
+
+                    <img src="images/sawai.jpg" alt="Pest Control in Lal Kothi" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Sawai Madhopur
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 39 -->
+
+                <a href="sikar.html" class="location-card">
+
+                    <img src="images/sikar.jpg" alt="Pest Control in Triveni Nagar" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Sikar
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 40 -->
+
+                <a href="sirohi.html" class="location-card">
+
+                    <img src="images/sirohi.avif" alt="Pest Control in Hari Marg" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Sirohi
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- 41 -->
+
+                <a href="sri_ganganagar.html" class="location-card">
+
+                    <img src="images/Shri.jpg" alt="Pest Control in Shipra Path" loading="lazy">
+
+                    <div class="location-overlay">
+
+                        <h3>
+                            Sri Ganganagar
+                        </h3>
+
+                        <span>
+                            View Service Details →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CTA
+        ================================================= -->
+
+        <section class="location-cta">
+
+
+            <h2>
+                Can't Find Your Location?
+            </h2>
+
+
+            <p>
+
+                We may still be able to provide
+                pest control services in your area.
+                Contact our team to check availability.
+
+            </p>
+
+
+            <a href="contact.html" class="btn-light">
+                Contact Us
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+
+                <a href="index.html" class="logo">
+
+                    <div class="logo-mark">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+
+                    <div class="logo-text">
+
+                        <strong>
+                            SUPER
+                        </strong>
+
+                        <small>
+                            PEST CONTROL
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+
+                    Professional pest control
+                    solutions for your home
+                    and business.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+
+                <h4>
+                    Quick Links
+                </h4>
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="services.html">
+                    Services
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+
+                <a href="services_location.html">
+                    Service Location
+                </a>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+
+            </div>
+
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+
+                <h4>
+                    Services
+                </h4>
+
+
+                <a href="services.html">
+                    Cockroach Control
+                </a>
+
+
+                <a href="services.html">
+                    Rodent Control
+                </a>
+
+
+                <a href="services.html">
+                    Termite Control
+                </a>
+
+
+                <a href="services.html">
+                    Mosquito Control
+                </a>
+
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+
+                <h4>
+                    Contact
+                </h4>
+
+
+                <p>+91 98280 66990</p>
+                <p>+91 79765 72984</p>
+
+
+                <p>
+                    superpestcontrolservices.jaipur@gmail.com
+                </p>
+
+
+                <p>
+                    Jaipur, Rajasthan
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 Super Pest Control Services.
+                All Rights Reserved.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         WHATSAPP
+    ===================================================== -->
+
+    <a href="https://wa.me/917976572984" class="whatsapp">
+        WhatsApp
+    </a>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

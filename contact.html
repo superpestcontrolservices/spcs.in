@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact Us | Super Pest Control</title>
+
+    <link rel="icon" type="image/png" href="images/Logooo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-mark">
+                    <img src="images/logo.png" alt="Super Pest Control">
+                </div>
+
+                <div class="logo-text">
+                    <strong>SUPER PEST</strong>
+                    <small>CONTROL SERVICES</small>
+                </div>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="residential.html">
+                    Residential
+                </a>
+
+                <a href="commercial.html">
+                    Commercial
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <!-- More Dropdown -->
+
+                <div class="nav-dropdown">
+
+                    <a href="#" class="more-link">
+                        More ▾
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="blog.html">
+                            Blogs
+                        </a>
+
+                        <a href="services_location.html">
+                            Service Location
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="contact.html" class="active">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <a href="#booking" class="nav-btn">
+                Book Service
+            </a>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
+    <section class="page-hero">
+
+        <span>
+            CONTACT US
+        </span>
+
+        <h1>
+            Let's Solve Your
+            <br>
+            Pest Problem.
+        </h1>
+
+        <p>
+            Tell us what you need and our team will get in touch.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section class="section contact-section">
+
+
+        <!-- CONTACT INFO -->
+
+        <div class="contact-info">
+
+            <span class="section-label">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                We're Here To Help.
+            </h2>
+
+            <p>
+                Have a pest problem? Contact us for professional
+                pest control assistance.
+            </p>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    Customer Care
+                </strong>
+
+                <p>
+                    +91 141 358 6075
+                </p>
+
+                <p>
+
+                </p>
+
+                <strong>
+                    PHONE
+                </strong>
+
+                <p>
+                    +91 98280 66990
+                </p>
+
+                <p>
+                    +91 79765 72984
+                </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    EMAIL
+                </strong>
+
+                <p>
+                    superpestcontrolservices.jaipur@gmail.com
+                </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>
+                    Registered Office
+                </strong>
+
+                <p>
+                    82/270, Sector 8, Pratap Nager, Sanganer
+                </p>
+                <p>
+                    Jaipur-302033, Rajasthan
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             BOOKING FORM
+        ========================== -->
+
+        <div
+            class="form-box"
+            id="booking"
+        >
+
+            <form id="contactForm">
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter 10 digit phone number"
+                        inputmode="numeric"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        minlength="10"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- SERVICE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Service
+                    </label>
+
+                    <select
+                        name="service"
+                        required
+                    >
+
+                        <option value="">
+                            Select Service
+                        </option>
+
+                        <option>
+                            Cockroach Control
+                        </option>
+
+                        <option>
+                            Rodent Control
+                        </option>
+
+                        <option>
+                            Mosquito Control
+                        </option>
+
+                        <option>
+                            Termite Control
+                        </option>
+
+                        <option>
+                            Bed Bug Control
+                        </option>
+
+                        <option>
+                            Other Services
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Message
+                    </label>
+
+                    <textarea
+                        name="message"
+                        rows="5"
+                        placeholder="Describe your pest problem..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="btn-primary"
+                >
+                    Send Enquiry
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Super Pest Control Services.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

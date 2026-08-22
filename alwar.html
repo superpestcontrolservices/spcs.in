@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pest Control Services in Alwar | Super Pest Control
+    </title>
+
+    <link rel="icon" type="image/png" href="images/Logooo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* =========================================
+           ALWAR LOCATION PAGE
+        ========================================= */
+
+        .location-page {
+            background: #f7f9f6;
+            min-height: 100vh;
+        }
+
+        /* HERO */
+
+        .location-hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(13, 52, 38, .98),
+                    rgba(24, 91, 61, .94)
+                );
+
+            color: #fff;
+            padding: 120px 20px 90px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location-hero::before,
+        .location-hero::after {
+            content: "";
+            position: absolute;
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 50%;
+        }
+
+        .location-hero::before {
+            width: 500px;
+            height: 500px;
+            top: -300px;
+            right: -150px;
+        }
+
+        .location-hero::after {
+            width: 350px;
+            height: 350px;
+            bottom: -230px;
+            left: -120px;
+        }
+
+        .location-hero-content {
+            max-width: 900px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .location-label {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 50px;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.18);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 22px;
+        }
+
+        .location-hero h1 {
+            font-size: clamp(38px, 6vw, 64px);
+            line-height: 1.1;
+            margin: 0 0 22px;
+        }
+
+        .location-hero p {
+            max-width: 760px;
+            margin: auto;
+            color: rgba(255,255,255,.84);
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .location-hero-buttons {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* MAIN CONTAINER */
+
+        .location-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 20px 100px;
+        }
+
+        /* SECTION */
+
+        .location-section {
+            margin-bottom: 70px;
+        }
+
+        .location-section h2 {
+            font-size: 34px;
+            color: #173e2e;
+            margin: 0 0 20px;
+        }
+
+        .location-section h3 {
+            font-size: 22px;
+            color: #245d43;
+            margin: 30px 0 12px;
+        }
+
+        .location-section p {
+            color: #53635b;
+            font-size: 16px;
+            line-height: 1.9;
+            margin-bottom: 18px;
+        }
+
+        /* CARDS */
+
+        .location-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .location-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow:
+                0 12px 35px rgba(20,55,40,.07);
+
+            border: 1px solid #e7eee9;
+        }
+
+        .location-card span {
+            display: inline-flex;
+            width: 45px;
+            height: 45px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #eaf4ed;
+            color: #1f6846;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .location-card h3 {
+            margin: 0 0 10px;
+            font-size: 21px;
+        }
+
+        .location-card p {
+            margin: 0;
+        }
+
+        /* SERVICE TABLE */
+
+        .service-table-wrapper {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        .service-table {
+            width: 100%;
+            min-width: 750px;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow:
+                0 12px 35px rgba(20,55,40,.07);
+        }
+
+        .service-table th {
+            background: #173e2e;
+            color: #fff;
+            padding: 18px;
+            text-align: left;
+        }
+
+        .service-table td {
+            padding: 18px;
+            border-bottom: 1px solid #e6ece8;
+            color: #53635b;
+            line-height: 1.6;
+        }
+
+        .service-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .service-table td:first-child {
+            color: #173e2e;
+            font-weight: 700;
+        }
+
+        /* AREA CARDS */
+
+        .area-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .area-card {
+            background: #fff;
+            border: 1px solid #e5ebe7;
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .area-card strong {
+            color: #173e2e;
+        }
+
+        .area-card span {
+            background: #eef6f0;
+            color: #1f6846;
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* LIST */
+
+        .location-list {
+            background: #fff;
+            border-radius: 18px;
+            padding: 30px 35px;
+            box-shadow:
+                0 12px 35px rgba(20,55,40,.06);
+        }
+
+        .location-list li {
+            color: #53635b;
+            line-height: 1.8;
+            margin-bottom: 14px;
+        }
+
+        .location-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* FAQ */
+
+        .faq-container {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 15px;
+            padding: 24px;
+            margin-bottom: 15px;
+            box-shadow:
+                0 8px 25px rgba(20,55,40,.05);
+        }
+
+        .faq-item h3 {
+            margin: 0 0 10px;
+            color: #173e2e;
+            font-size: 19px;
+        }
+
+        .faq-item p {
+            margin: 0;
+        }
+
+        /* CTA */
+
+        .location-cta {
+            background:
+                linear-gradient(
+                    135deg,
+                    #174d36,
+                    #286d4c
+                );
+
+            color: #fff;
+            border-radius: 25px;
+            padding: 55px 35px;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .location-cta h2 {
+            color: #fff;
+            margin: 0 0 15px;
+            font-size: 38px;
+        }
+
+        .location-cta p {
+            color: rgba(255,255,255,.82);
+            max-width: 700px;
+            margin: 0 auto 25px;
+            line-height: 1.8;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .location-grid,
+            .area-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .location-hero {
+                padding: 90px 18px 70px;
+            }
+
+            .location-hero h1 {
+                font-size: 40px;
+            }
+
+            .location-hero p {
+                font-size: 16px;
+            }
+
+            .location-container {
+                padding: 45px 15px 70px;
+            }
+
+            .location-section h2 {
+                font-size: 29px;
+            }
+
+            .location-card {
+                padding: 23px;
+            }
+
+            .location-list {
+                padding: 25px 25px;
+            }
+
+            .location-cta {
+                padding: 40px 22px;
+            }
+
+            .location-cta h2 {
+                font-size: 30px;
+            }
+
+        }
+        /* =========================================
+   BLOG PAGE NAVBAR FIX
+========================================= */
+
+.header {
+    background: #ffffff !important;
+    position: relative;
+    z-index: 10000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    background: #ffffff !important;
+}
+
+/* Navbar links */
+.nav-links a {
+    color: #173e2e;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2c7a52;
+}
+
+/* More dropdown */
+.nav-dropdown .more-link {
+    color: #173e2e;
+}
+
+/* Book Service button */
+.nav-btn {
+    background: #1f6846;
+    color: #ffffff !important;
+}
+
+.nav-btn:hover {
+    background: #174d36;
+}
+
+/* Logo text */
+.logo-text strong {
+    color: #173e2e;
+}
+
+.logo-text small {
+    color: #53635b;
+}
+
+/* Mobile menu */
+.menu-btn {
+    color: #173e2e;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-mark">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="logo-text">
+                <strong>SUPER PEST</strong>
+                <small>CONTROL SERVICES</small>
+            </div>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="residential.html">
+                Residential
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+
+            <div class="nav-dropdown">
+
+                <a href="#" class="more-link">
+                    More ▾
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="blog.html">
+                        Blogs
+                    </a>
+
+                    <a href="services_location.html">
+                        Service Location
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <a href="contact.html" class="nav-btn">
+            Book Service
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================
+     PAGE
+========================================= -->
+
+<main class="location-page">
+
+
+    <!-- HERO -->
+
+    <section class="location-hero">
+
+        <div class="location-hero-content">
+
+            <div class="location-label">
+                PEST CONTROL IN ALWAR
+            </div>
+
+            <h1>
+                Professional Pest Control
+                Services in Alwar
+            </h1>
+
+            <p>
+                Super Pest Control Services provides
+                professional pest management solutions
+                for residential, commercial and industrial
+                properties throughout Alwar and surrounding
+                areas.
+            </p>
+
+            <div class="location-hero-buttons">
+
+                <a
+                    href="contact.html"
+                    class="btn-light"
+                >
+                    Book An Inspection
+                </a>
+
+                <a
+                    href="tel:9828066990"
+                    class="btn-outline"
+                >
+                    Call 98280-66990
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="location-container">
+
+
+        <!-- INTRO -->
+
+        <section class="location-section">
+
+            <h2>
+                Why Choose Super Pest Control Services
+                for Pest Management in Alwar?
+            </h2>
+
+            <p>
+                We provide technical and structured pest
+                management solutions throughout Alwar,
+                focusing on inspection, targeted treatment,
+                prevention and long-term pest management.
+            </p>
+
+
+            <div class="location-grid">
+
+
+                <div class="location-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Fully Certified & Recognized
+                    </h3>
+
+                    <p>
+                        NIPHM-trained technicians and IPCA
+                        membership with GST and MSME
+                        registration for professional
+                        commercial vendor onboarding.
+                    </p>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Calculated Dosage & Dilution
+                    </h3>
+
+                    <p>
+                        Treatment dosage and dilution can be
+                        calculated according to surface
+                        conditions and pest biology.
+                    </p>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        Government-Compliant Formulations
+                    </h3>
+
+                    <p>
+                        CIB&RC-approved chemical formulations
+                        are used according to appropriate
+                        pest-management requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        Industrial Compliance
+                    </h3>
+
+                    <p>
+                        Pest management solutions for
+                        factories, chemical plants,
+                        warehouses and other industrial
+                        facilities.
+                    </p>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <span>05</span>
+
+                    <h3>
+                        Root-Cause Eradication
+                    </h3>
+
+                    <p>
+                        Inspection focuses on nesting areas,
+                        entry points and conditions that
+                        contribute to recurring infestations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+
+        <section class="location-section">
+
+            <h2>
+                Targeted Pest Control Services in Alwar
+            </h2>
+
+            <div class="service-table-wrapper">
+
+                <table class="service-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Pest Threat
+                            </th>
+
+                            <th>
+                                Treatment Methodology
+                            </th>
+
+                            <th>
+                                Best Suited For
+                            </th>
+
+                            <th>
+                                Residual Protection
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                Termites
+                                <br>
+                                (White Ants)
+                            </td>
+
+                            <td>
+                                Deep-drill chemical barrier
+                                injection for pre/post
+                                construction treatment.
+                            </td>
+
+                            <td>
+                                Homes, warehouses,
+                                foundations
+                            </td>
+
+                            <td>
+                                Long-term
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Cockroaches & Ants
+                            </td>
+
+                            <td>
+                                Targeted gel baiting and
+                                localized crevice spraying.
+                            </td>
+
+                            <td>
+                                Commercial kitchens,
+                                offices, homes
+                            </td>
+
+                            <td>
+                                High — Months
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Rodents
+                                <br>
+                                (Rats/Mice)
+                            </td>
+
+                            <td>
+                                Strategic bait stations,
+                                trapping and entry-point
+                                sealing.
+                            </td>
+
+                            <td>
+                                Industrial zones,
+                                warehouses, retail
+                            </td>
+
+                            <td>
+                                Ongoing maintenance
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Mosquitoes & Flies
+                            </td>
+
+                            <td>
+                                Thermal fogging and
+                                localized residual
+                                surface sprays.
+                            </td>
+
+                            <td>
+                                Factory compounds,
+                                residential yards
+                            </td>
+
+                            <td>
+                                Medium — Weeks
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMMERCIAL -->
+
+        <section class="location-section">
+
+            <h2>
+                Commercial & Industrial Pest Control
+            </h2>
+
+            <p>
+                Protect your inventory and operational
+                compliance with commercial pest management
+                plans customized for heavy manufacturing,
+                chemical processing, minerals and logistics
+                facilities in Alwar.
+            </p>
+
+            <p>
+                Our approach is designed to provide pest
+                management while minimizing disruption to
+                business operations.
+            </p>
+
+        </section>
+
+
+        <!-- RESIDENTIAL -->
+
+        <section class="location-section">
+
+            <h2>
+                Residential Pest Control
+            </h2>
+
+            <p>
+                Keep your home protected from structural
+                damage and pest-related problems with
+                professional residential pest control
+                treatments.
+            </p>
+
+            <p>
+                Our residential services focus on practical
+                treatment and preventive pest management.
+            </p>
+
+        </section>
+
+
+        <!-- AREAS -->
+
+        <section class="location-section">
+
+            <h2>
+                Nearby Areas & PIN Codes We Serve
+                in Alwar
+            </h2>
+
+            <p>
+                Our dispatch teams cover major residential
+                and commercial hubs across Alwar.
+            </p>
+
+
+            <div class="area-grid">
+
+                <div class="area-card">
+
+                    <strong>
+                        Matsya Industrial Area (MIA)
+                    </strong>
+
+                    <span>
+                        301030
+                    </span>
+
+                </div>
+
+
+                <div class="area-card">
+
+                    <strong>
+                        Alwar City / Civil Lines
+                    </strong>
+
+                    <span>
+                        301001
+                    </span>
+
+                </div>
+
+
+                <div class="area-card">
+
+                    <strong>
+                        NEB Housing Board
+                    </strong>
+
+                    <span>
+                        301001
+                    </span>
+
+                </div>
+
+
+                <div class="area-card">
+
+                    <strong>
+                        Rajgarh
+                    </strong>
+
+                    <span>
+                        301408
+                    </span>
+
+                </div>
+
+
+                <div class="area-card">
+
+                    <strong>
+                        Kishangarh Bas
+                    </strong>
+
+                    <span>
+                        301405
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p style="margin-top:25px;">
+                Located outside these specific PIN codes?
+                If you are anywhere in the Alwar district,
+                contact us to check service availability.
+            </p>
+
+        </section>
+
+
+        <!-- DIY -->
+
+        <section class="location-section">
+
+            <h2>
+                DIY vs. Professional Pest Control
+                in Alwar
+            </h2>
+
+            <p>
+                Alwar's climate and expanding industrial
+                zones can create conditions suitable for
+                different pest problems.
+            </p>
+
+            <ul class="location-list">
+
+                <li>
+                    <strong>Chemical Concentration:</strong>
+                    Professional treatments may use
+                    appropriate formulations designed for
+                    specific pest-management requirements.
+                </li>
+
+                <li>
+                    <strong>Species Targeting:</strong>
+                    Different cockroach species and other
+                    pests can require different treatment
+                    approaches.
+                </li>
+
+                <li>
+                    <strong>Cost-Efficiency:</strong>
+                    Preventing structural termite damage
+                    and recurring commercial infestations
+                    can reduce long-term costs.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- HOW TO CHOOSE -->
+
+        <section class="location-section">
+
+            <h2>
+                How to Find the Best Pest Control
+                Company in Alwar
+            </h2>
+
+            <ol class="location-list">
+
+                <li>
+                    Check national certifications and
+                    professional training.
+                </li>
+
+                <li>
+                    Verify business registration details
+                    such as GST and MSME registration.
+                </li>
+
+                <li>
+                    Ask about the active ingredients and
+                    treatment approach being used.
+                </li>
+
+                <li>
+                    Verify that the company has the
+                    appropriate licenses required to
+                    operate.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- FAQ -->
+
+        <section class="location-section">
+
+            <h2>
+                FAQs About Pest Control Services
+                in Alwar
+            </h2>
+
+
+            <div class="faq-container">
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        How quickly can you dispatch
+                        a pest control technician in Alwar?
+                    </h3>
+
+                    <p>
+                        Same-day and next-day pest control
+                        inspections are available across
+                        major Alwar residential and
+                        industrial PIN codes.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        Are pest control chemicals safe
+                        for pets and employees?
+                    </h3>
+
+                    <p>
+                        The PDF specifies the use of
+                        CIB&RC-approved, low-toxicity
+                        formulations and states that treated
+                        areas are safe once the residual
+                        application has dried.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        Do I need to close my business
+                        for treatment?
+                    </h3>
+
+                    <p>
+                        For many modern treatments such as
+                        gel baiting, the PDF states that
+                        closing the facility may not be
+                        necessary. Heavy liquid treatments
+                        may require specific preparation
+                        instructions.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+
+        <section class="location-cta">
+
+            <h2>
+                Ready to Eliminate Pests?
+            </h2>
+
+            <p>
+                Contact Super Pest Control Services
+                to book a pest-control site evaluation
+                in Alwar.
+            </p>
+
+            <a
+                href="tel:9828066990"
+                class="btn-light"
+            >
+                Call 98280-66990
+            </a>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-mark">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div class="logo-text">
+                    <strong>SUPER</strong>
+                    <small>PEST CONTROL</small>
+                </div>
+
+            </a>
+
+            <p>
+                Professional pest control solutions
+                for your home and business.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="services_location.html">
+                Service Location
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Services
+            </h4>
+
+            <a href="services.html">
+                Cockroach Control
+            </a>
+
+            <a href="services.html">
+                Rodent Control
+            </a>
+
+            <a href="services.html">
+                Termite Control
+            </a>
+
+            <a href="services.html">
+                Mosquito Control
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                +91 98280-66990
+            </p>
+
+            <p>
+                +91 79765 72984
+            </p>
+
+            <p>
+                superpestcontrolservices.jaipur@gmail.com
+            </p>
+
+            <p>
+                Jaipur, Rajasthan
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Super Pest Control Services.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+    href="https://wa.me/917976572984"
+    class="whatsapp"
+>
+    WhatsApp
+</a>
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

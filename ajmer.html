@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pest Control Services in Ajmer | Super Pest Control
+    </title>
+
+    <link rel="icon" type="image/png" href="images/Logooo.png">
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <style>
+
+        /* =========================
+           AJMER PAGE
+        ========================= */
+
+        .location-page {
+            background: #f7f9f6;
+        }
+
+        /* HERO */
+
+        .location-hero {
+            min-height: 620px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 140px 7% 90px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #103c2b,
+                    #1f6846
+                );
+
+            color: #fff;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location-hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 550px;
+            height: 550px;
+
+            border: 1px solid
+                rgba(255,255,255,0.12);
+
+            border-radius: 50%;
+
+            right: -180px;
+            top: -220px;
+        }
+
+        .location-hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 350px;
+            height: 350px;
+
+            border: 1px solid
+                rgba(255,255,255,0.08);
+
+            border-radius: 50%;
+
+            left: -170px;
+            bottom: -180px;
+        }
+
+        .location-hero-content {
+            max-width: 850px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .location-badge {
+            display: inline-block;
+
+            padding: 9px 18px;
+
+            border-radius: 50px;
+
+            background:
+                rgba(255,255,255,0.12);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.18);
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            margin-bottom: 22px;
+        }
+
+        .location-hero h1 {
+            font-size:
+                clamp(38px, 6vw, 70px);
+
+            line-height: 1.08;
+
+            margin: 0 0 25px;
+
+            font-weight: 800;
+        }
+
+        .location-hero h1 span {
+            color: #bde8ce;
+        }
+
+        .location-hero p {
+            max-width: 750px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color:
+                rgba(255,255,255,0.82);
+
+            margin-bottom: 30px;
+        }
+
+        .location-buttons {
+            display: flex;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+        }
+
+        .location-call {
+            display: inline-flex;
+
+            align-items: center;
+
+            padding: 14px 24px;
+
+            border-radius: 9px;
+
+            background: #fff;
+
+            color: #174d36;
+
+            text-decoration: none;
+
+            font-weight: 700;
+        }
+
+        /* CONTAINER */
+
+        .location-container {
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding:
+                80px 20px 100px;
+        }
+
+        /* INTRO */
+
+        .location-intro {
+            max-width: 900px;
+
+            margin: 0 auto 65px;
+
+            text-align: center;
+        }
+
+        .location-intro span {
+            color: #28704d;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+        }
+
+        .location-intro h2 {
+            font-size:
+                clamp(32px, 4vw, 48px);
+
+            color: #173e2e;
+
+            margin: 12px 0 20px;
+        }
+
+        .location-intro p {
+            color: #5b6962;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+        /* CARDS */
+
+        .location-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+
+            margin-bottom: 75px;
+        }
+
+        .location-card {
+            background: #fff;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            border:
+                1px solid #e4ebe6;
+
+            box-shadow:
+                0 12px 35px
+                rgba(20,55,40,0.06);
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+        }
+
+        .location-card:hover {
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                0 20px 45px
+                rgba(20,55,40,0.11);
+        }
+
+        .location-icon {
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background: #eaf5ee;
+
+            font-size: 25px;
+
+            margin-bottom: 18px;
+        }
+
+        .location-card h3 {
+            margin: 0 0 12px;
+
+            color: #173e2e;
+
+            font-size: 21px;
+        }
+
+        .location-card p {
+            margin: 0;
+
+            color: #5b6962;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+        /* SERVICE TABLE */
+
+        .location-section {
+            margin-top: 70px;
+        }
+
+        .location-section-title {
+            margin-bottom: 30px;
+        }
+
+        .location-section-title span {
+            color: #28704d;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.4px;
+        }
+
+        .location-section-title h2 {
+            color: #173e2e;
+
+            font-size:
+                clamp(30px, 4vw, 44px);
+
+            margin: 10px 0;
+        }
+
+        .location-section-title p {
+            color: #5b6962;
+
+            line-height: 1.8;
+
+            max-width: 800px;
+        }
+
+        .service-table-wrapper {
+            overflow-x: auto;
+
+            background: #fff;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 12px 40px
+                rgba(20,55,40,0.07);
+        }
+
+        .service-table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            min-width: 700px;
+        }
+
+        .service-table th {
+            background: #173e2e;
+
+            color: #fff;
+
+            text-align: left;
+
+            padding: 18px;
+        }
+
+        .service-table td {
+            padding: 18px;
+
+            border-bottom:
+                1px solid #edf1ee;
+
+            color: #526159;
+
+            line-height: 1.6;
+        }
+
+        .service-table td:first-child {
+            color: #173e2e;
+
+            font-weight: 700;
+        }
+
+        /* AREAS */
+
+        .area-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 14px;
+        }
+
+        .area-box {
+            background: #fff;
+
+            border:
+                1px solid #e3ebe6;
+
+            padding: 20px 15px;
+
+            border-radius: 14px;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            color: #173e2e;
+
+            font-weight: 700;
+
+            transition: .25s ease;
+        }
+
+        .area-box:hover {
+            background: #eaf5ee;
+
+            transform:
+                translateY(-4px);
+        }
+
+        .area-box small {
+            display: block;
+
+            margin-top: 6px;
+
+            color: #6c7872;
+
+            font-weight: 500;
+        }
+
+        /* TWO COLUMNS */
+
+        .two-column {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .info-card {
+            background: #fff;
+
+            border-radius: 20px;
+
+            padding: 32px;
+
+            border:
+                1px solid #e5ebe7;
+        }
+
+        .info-card h3 {
+            color: #173e2e;
+
+            margin-top: 0;
+
+            font-size: 24px;
+        }
+
+        .info-card p {
+            color: #59665f;
+
+            line-height: 1.8;
+        }
+
+        /* CHECK LIST */
+
+        .check-list {
+            display: grid;
+
+            gap: 14px;
+
+            margin-top: 25px;
+        }
+
+        .check-item {
+            padding: 15px 18px;
+
+            background: #f2f8f4;
+
+            border-radius: 10px;
+
+            color: #315c47;
+
+            line-height: 1.6;
+        }
+
+        /* FAQ */
+
+        .faq {
+            background: #fff;
+
+            border-radius: 20px;
+
+            padding: 10px 30px;
+
+            box-shadow:
+                0 12px 35px
+                rgba(20,55,40,0.06);
+        }
+
+        .faq-item {
+            padding: 24px 0;
+
+            border-bottom:
+                1px solid #e7ece9;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            margin: 0 0 10px;
+
+            color: #173e2e;
+
+            font-size: 19px;
+        }
+
+        .faq-item p {
+            margin: 0;
+
+            color: #5b6962;
+
+            line-height: 1.7;
+        }
+
+        /* CTA */
+
+        .location-cta {
+            margin-top: 75px;
+
+            padding: 55px 40px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #173e2e,
+                    #286d4c
+                );
+
+            color: #fff;
+        }
+
+        .location-cta h2 {
+            font-size:
+                clamp(30px, 4vw, 45px);
+
+            margin: 0 0 15px;
+        }
+
+        .location-cta p {
+            color:
+                rgba(255,255,255,0.8);
+
+            line-height: 1.7;
+
+            margin-bottom: 25px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            .location-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .area-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .location-hero {
+                min-height: auto;
+
+                padding:
+                    115px 20px 70px;
+            }
+
+            .location-hero h1 {
+                font-size: 39px;
+            }
+
+            .location-hero p {
+                font-size: 15px;
+            }
+
+            .location-container {
+                padding:
+                    55px 14px 70px;
+            }
+
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .area-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .location-card {
+                padding: 25px;
+            }
+
+            .info-card {
+                padding: 25px;
+            }
+
+            .faq {
+                padding: 10px 20px;
+            }
+
+            .location-cta {
+                padding: 40px 22px;
+            }
+
+        }
+        /* =========================================
+   BLOG PAGE NAVBAR FIX
+========================================= */
+
+.header {
+    background: #ffffff !important;
+    position: relative;
+    z-index: 10000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    background: #ffffff !important;
+}
+
+/* Navbar links */
+.nav-links a {
+    color: #173e2e;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2c7a52;
+}
+
+/* More dropdown */
+.nav-dropdown .more-link {
+    color: #173e2e;
+}
+
+/* Book Service button */
+.nav-btn {
+    background: #1f6846;
+    color: #ffffff !important;
+}
+
+.nav-btn:hover {
+    background: #174d36;
+}
+
+/* Logo text */
+.logo-text strong {
+    color: #173e2e;
+}
+
+.logo-text small {
+    color: #53635b;
+}
+
+/* Mobile menu */
+.menu-btn {
+    color: #173e2e;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-mark">
+
+                    <img
+                        src="images/logo.png"
+                        alt="Super Pest Control"
+                    >
+
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>SUPER PEST</strong>
+
+                    <small>
+                        CONTROL SERVICES
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="residential.html">
+                    Residential
+                </a>
+
+                <a href="commercial.html">
+                    Commercial
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <div class="nav-dropdown">
+
+                    <a href="#" class="more-link">
+                        More ▾
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="blog.html">
+                            Blogs
+                        </a>
+
+                        <a href="services_location.html">
+                            Service Location
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <a
+                href="contact.html"
+                class="nav-btn"
+            >
+                Book Service
+            </a>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="location-page">
+
+
+        <!-- HERO -->
+
+        <section class="location-hero">
+
+            <div class="location-hero-content">
+
+                <span class="location-badge">
+                    AJMER • PEST CONTROL SERVICES
+                </span>
+
+                <h1>
+                    Professional Pest Control
+                    <br>
+                    <span>Services in Ajmer</span>
+                </h1>
+
+                <p>
+                    Professional pest management solutions
+                    for residential, commercial and industrial
+                    properties throughout Ajmer and surrounding
+                    areas.
+                </p>
+
+                <div class="location-buttons">
+
+                    <a
+                        href="tel:9828066990"
+                        class="location-call"
+                    >
+                        📞 Call 98280-66990
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="btn-outline"
+                    >
+                        Book Inspection
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="location-container">
+
+
+            <!-- INTRO -->
+
+            <section class="location-intro">
+
+                <span>
+                    SUPER PEST CONTROL SERVICES
+                </span>
+
+                <h2>
+                    Trusted Pest Management
+                    in Ajmer
+                </h2>
+
+                <p>
+                    Super Pest Control Services provides
+                    professional pest management solutions
+                    throughout Ajmer and surrounding districts.
+                    Our approach focuses on identifying the
+                    source of infestations and implementing
+                    appropriate long-term pest management
+                    solutions.
+                </p>
+
+            </section>
+
+
+            <!-- WHY US -->
+
+            <section class="location-section">
+
+                <div class="location-section-title">
+
+                    <span>
+                        WHY CHOOSE US
+                    </span>
+
+                    <h2>
+                        Pest Management
+                        You Can Trust
+                    </h2>
+
+                </div>
+
+
+                <div class="location-grid">
+
+
+                    <div class="location-card">
+
+                        <div class="location-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            Certified & Recognized
+                        </h3>
+
+                        <p>
+                            NIPHM-trained technicians and
+                            IPCA membership with GST and MSME
+                            registration for commercial
+                            requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="location-card">
+
+                        <div class="location-icon">
+                            ⚗
+                        </div>
+
+                        <h3>
+                            Calculated Dosage
+                        </h3>
+
+                        <p>
+                            Treatment approaches consider
+                            surface conditions, pest biology
+                            and appropriate dilution ratios.
+                        </p>
+
+                    </div>
+
+
+                    <div class="location-card">
+
+                        <div class="location-icon">
+                            🛡
+                        </div>
+
+                        <h3>
+                            Approved Formulations
+                        </h3>
+
+                        <p>
+                            CIB&RC-approved chemical formulations
+                            are used according to applicable
+                            treatment requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="location-card">
+
+                        <div class="location-icon">
+                            🏭
+                        </div>
+
+                        <h3>
+                            Industrial Compliance
+                        </h3>
+
+                        <p>
+                            Commercial solutions designed for
+                            factories, food processing units and
+                            warehouses.
+                        </p>
+
+                    </div>
+
+
+                    <div class="location-card">
+
+                        <div class="location-icon">
+                            🎯
+                        </div>
+
+                        <h3>
+                            Root-Cause Approach
+                        </h3>
+
+                        <p>
+                            We focus on identifying nesting areas,
+                            entry points and conditions that
+                            contribute to pest activity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="location-card">
+
+                        <div class="location-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Rapid Response
+                        </h3>
+
+                        <p>
+                            Same-day and next-day inspections
+                            are available across major Ajmer
+                            residential and industrial PIN codes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICES -->
+
+            <section class="location-section">
+
+                <div class="location-section-title">
+
+                    <span>
+                        OUR SERVICES
+                    </span>
+
+                    <h2>
+                        Targeted Pest Control
+                        Services in Ajmer
+                    </h2>
+
+                </div>
+
+
+                <div class="service-table-wrapper">
+
+                    <table class="service-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Pest Threat
+                                </th>
+
+                                <th>
+                                    Treatment Methodology
+                                </th>
+
+                                <th>
+                                    Best Suited For
+                                </th>
+
+                                <th>
+                                    Protection
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Termites
+                                    <br>
+                                    (White Ants)
+                                </td>
+
+                                <td>
+                                    Deep-drill chemical barrier
+                                    injection for pre/post
+                                    construction treatment.
+                                </td>
+
+                                <td>
+                                    Homes, warehouses,
+                                    foundations
+                                </td>
+
+                                <td>
+                                    Long-term
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Cockroaches & Ants
+                                </td>
+
+                                <td>
+                                    Targeted gel baiting and
+                                    localized crevice spraying.
+                                </td>
+
+                                <td>
+                                    Commercial kitchens,
+                                    offices, homes
+                                </td>
+
+                                <td>
+                                    High
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Rodents
+                                    <br>
+                                    (Rats/Mice)
+                                </td>
+
+                                <td>
+                                    Strategic bait stations,
+                                    trapping and entry-point
+                                    sealing.
+                                </td>
+
+                                <td>
+                                    Industrial zones,
+                                    warehouses, retail
+                                </td>
+
+                                <td>
+                                    Ongoing Maintenance
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Mosquitoes & Flies
+                                </td>
+
+                                <td>
+                                    Thermal fogging and
+                                    localized residual
+                                    surface sprays.
+                                </td>
+
+                                <td>
+                                    Factory compounds,
+                                    residential yards
+                                </td>
+
+                                <td>
+                                    Medium
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- COMMERCIAL / RESIDENTIAL -->
+
+            <section class="location-section">
+
+                <div class="two-column">
+
+
+                    <div class="info-card">
+
+                        <h3>
+                            🏭 Commercial & Industrial
+                            Pest Control
+                        </h3>
+
+                        <p>
+                            Protect inventory and operational
+                            compliance with commercial maintenance
+                            plans customized for manufacturing,
+                            marble industry and logistics hubs.
+                        </p>
+
+                        <p>
+                            Our services are designed to help
+                            businesses maintain pest-free
+                            facilities while minimizing
+                            disruption to daily operations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <h3>
+                            🏠 Residential Pest Control
+                        </h3>
+
+                        <p>
+                            Keep your home protected from
+                            structural damage and pest-related
+                            problems with professional residential
+                            pest management.
+                        </p>
+
+                        <p>
+                            Treatments are planned according
+                            to the property, pest type and
+                            infestation conditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- AREAS -->
+
+            <section class="location-section">
+
+                <div class="location-section-title">
+
+                    <span>
+                        SERVICE AREAS
+                    </span>
+
+                    <h2>
+                        Areas & PIN Codes
+                        We Serve in Ajmer
+                    </h2>
+
+                    <p>
+                        Our dispatch teams serve major
+                        residential and commercial hubs
+                        throughout Ajmer district.
+                    </p>
+
+                </div>
+
+
+                <div class="area-grid">
+
+                    <a href="#" class="area-box">
+
+                        Parbatpura
+                        <small>
+                            305002
+                        </small>
+
+                    </a>
+
+
+                    <a href="#" class="area-box">
+
+                        Makhupura
+                        <small>
+                            305002
+                        </small>
+
+                    </a>
+
+
+                    <a href="#" class="area-box">
+
+                        Kishangarh
+                        <small>
+                            305801
+                        </small>
+
+                    </a>
+
+
+                    <a href="#" class="area-box">
+
+                        Vaishali Nagar
+                        <small>
+                            305004
+                        </small>
+
+                    </a>
+
+
+                    <a href="#" class="area-box">
+
+                        Civil Lines
+                        <small>
+                            305001
+                        </small>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- DIY VS PROFESSIONAL -->
+
+            <section class="location-section">
+
+                <div class="two-column">
+
+
+                    <div class="info-card">
+
+                        <h3>
+                            DIY vs Professional
+                            Pest Control
+                        </h3>
+
+                        <p>
+                            Over-the-counter sprays may provide
+                            a temporary knockdown effect, but
+                            recurring infestations may require
+                            professional inspection and
+                            targeted treatment.
+                        </p>
+
+                        <div class="check-list">
+
+                            <div class="check-item">
+                                ✓ Professional pest identification
+                            </div>
+
+                            <div class="check-item">
+                                ✓ Targeted treatment strategy
+                            </div>
+
+                            <div class="check-item">
+                                ✓ Identification of entry points
+                            </div>
+
+                            <div class="check-item">
+                                ✓ Focus on underlying infestation
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <h3>
+                            How to Find the
+                            Best Pest Control Company
+                        </h3>
+
+                        <div class="check-list">
+
+                            <div class="check-item">
+                                <strong>01.</strong>
+                                Check national certifications.
+                            </div>
+
+                            <div class="check-item">
+                                <strong>02.</strong>
+                                Verify GST and MSME registration.
+                            </div>
+
+                            <div class="check-item">
+                                <strong>03.</strong>
+                                Ask about active ingredients.
+                            </div>
+
+                            <div class="check-item">
+                                <strong>04.</strong>
+                                Verify required licensing.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FAQ -->
+
+            <section class="location-section">
+
+                <div class="location-section-title">
+
+                    <span>
+                        FAQ
+                    </span>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                </div>
+
+
+                <div class="faq">
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            How quickly can you dispatch
+                            a pest control technician in Ajmer?
+                        </h3>
+
+                        <p>
+                            Same-day and next-day pest control
+                            inspections are available across
+                            major Ajmer residential and
+                            industrial PIN codes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Are the pest control chemicals
+                            safe for pets and employees?
+                        </h3>
+
+                        <p>
+                            Treatments are carried out using
+                            appropriate approved formulations
+                            and according to professional
+                            treatment instructions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Do I need to close my business
+                            during treatment?
+                        </h3>
+
+                        <p>
+                            Preparation requirements depend
+                            on the treatment method and
+                            infestation. The service team can
+                            provide preparation instructions
+                            before treatment.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            What if pests keep coming back?
+                        </h3>
+
+                        <p>
+                            Recurring activity can indicate
+                            an unresolved entry point,
+                            food source, moisture problem or
+                            hidden infestation. A professional
+                            inspection can help identify
+                            the underlying cause.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FINAL CTA -->
+
+            <section class="location-cta">
+
+                <h2>
+                    Ready to Eliminate
+                    Pests in Ajmer?
+                </h2>
+
+                <p>
+                    Contact Super Pest Control Services
+                    today to book your Ajmer site evaluation.
+                </p>
+
+                <a
+                    href="tel:9828066990"
+                    class="location-call"
+                >
+                    📞 Call 98280-66990
+                </a>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <div class="logo-mark">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong>SUPER</strong>
+
+                        <small>
+                            PEST CONTROL
+                        </small>
+
+                    </div>
+
+                </a>
+
+                <p>
+                    Professional pest control solutions
+                    for your home and business.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="services_location.html">
+                    Service Location
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Services
+                </h4>
+
+                <a href="services.html">
+                    Cockroach Control
+                </a>
+
+                <a href="services.html">
+                    Rodent Control
+                </a>
+
+                <a href="services.html">
+                    Termite Control
+                </a>
+
+                <a href="services.html">
+                    Mosquito Control
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    +91 98280 66990
+                </p>
+
+                <p>
+                    +91 79765 72984
+                </p>
+
+                <p>
+                    superpestcontrolservices.jaipur@gmail.com
+                </p>
+
+                <p>
+                    Ajmer, Rajasthan
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Super Pest Control Services.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP -->
+
+   <a href="https://wa.me/917976572984"
+   class="whatsapp"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat on WhatsApp">
+    <span>whatsapp</span>
+</a>
+
+
+    <script src="js/script.js"></script>
+
+
+    <!-- MOBILE NAV -->
+
+    <script>
+
+        const menuBtn =
+            document.getElementById("menuBtn");
+
+        const navLinks =
+            document.querySelector(".nav-links");
+
+        if (menuBtn && navLinks) {
+
+            menuBtn.addEventListener(
+                "click",
+                function () {
+
+                    navLinks.classList.toggle(
+                        "mobile-open"
+                    );
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
