@@ -1,3 +1,17 @@
+# Standard Web Crawlers
 User-agent: *
 Allow: /
 Sitemap: https://www.superpest.in/sitemap.xml
+
+# Explicit Permissions for AI Crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
