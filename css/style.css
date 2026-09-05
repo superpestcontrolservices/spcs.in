@@ -823,6 +823,96 @@ img {
     font-weight: 800;
 }
 
+
+/* =========================================================
+   CUSTOMER REVIEWS
+========================================================= */
+
+.review-carousel {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.review-grid-large {
+    display: flex;
+
+    gap: 18px;
+
+    animation: reviewSlideHorizontal 18s ease-in-out infinite;
+}
+
+.review-card {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px;
+
+    min-height: 300px;
+
+    flex: 0 0 calc((100% - 36px) / 3);
+
+    background: #ffffff;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow:
+        0 10px 40px rgba(40, 60, 40, 0.04);
+}
+
+.review-stars {
+    margin-bottom: 22px;
+
+    color: #d4a72c;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+}
+
+.review-card p {
+    flex: 1;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+.review-card strong {
+    margin-top: 24px;
+
+    color: var(--green-dark);
+
+    font-size: 12px;
+}
+
+@keyframes reviewSlideHorizontal {
+    0%,
+    32% {
+        transform: translateX(0);
+    }
+
+    43%,
+    90% {
+        transform: translateX(-40%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .review-grid-large {
+        animation: none;
+    }
+}
+
 .center-btn {
     text-align: center;
 
@@ -1603,6 +1693,10 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .review-card {
+        flex-basis: calc((100% - 18px) / 2);
+    }
+
     .why-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2347,6 +2441,10 @@ body {
         padding: 25px;
 
         border-radius: 18px;
+    }
+
+    .review-card {
+        flex-basis: 100%;
     }
 
     .service-icon {
