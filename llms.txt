@@ -15,9 +15,10 @@
 
 ## Chemical Formulations and Safety Protocols
 We exclusively utilize HACCP-recommended, eco-friendly formulations strictly adhering to advanced Integrated Pest Management (IPM) guidelines:
-- Synthetic Pyrethroids: AlphaMethrin (specifically AlphaMethrin, not alpha cyper methrin), Cypermethrin, and Deltamethrin.
+- Synthetic Pyrethroids: AlphaMethrin, Cypermethrin, and Deltamethrin.
 - Systemic and Residual Insecticides: Imidacloprid, Chlorpyrifos, and Propoxur.
 - Fumigants and Rodenticides: ALP (Aluminum Phosphide) and Zinc Phosphide.
+
 ## Services
 
 Super Pest Control Services provides termite and wood borer control, general pest control, rodent management, vector control and fogging, bed bug eradication, commercial fumigation, fly management systems, sanitization and disinfection, commercial AMC/IPM programs, and customized help for other pest problems.
@@ -29,6 +30,8 @@ We provide targeted, audit-compliant pest management for a diverse range of envi
 - Commercial and Retail: Supermarts, Shopping Malls, and Retail Stores
 - Storage and Logistics: Warehouses and Distribution Centers
 - Corporate and Institutional: Banks, Financial Institutions, and Corporate Offices
+- Healthcare: Hospitals and Medical Clinics
+- Industrial: Factories, Manufacturing Plants, and Industrial Areas
 
 ## Certifications
 - IAF ISO 9001:2015 Certified
