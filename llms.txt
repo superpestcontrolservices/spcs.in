@@ -1,57 +1,32 @@
 # Super Pest Control Services
 
-> Professional residential and commercial pest control services across Rajasthan.
+> Super Pest Control Services provides residential and commercial pest management across Rajasthan, including termite, cockroach, rodent, mosquito, bed bug, fumigation, and general pest control treatments.
 
-## Website
+Super Pest Control Services serves homes, businesses, hospitality venues, food and beverage facilities, warehouses, retail locations, offices, and institutions. The company is based in Jaipur and also has an office in Beawar.
 
-- Homepage: https://superpest.in/
-- Services: https://superpest.in/services/
-- Residential pest control: https://superpest.in/residential-pest-control/
-- Commercial pest control: https://superpest.in/commercial-pest-control/
-- Service locations: https://superpest.in/service-location/
-- About: https://superpest.in/about/
-- Blog: https://superpest.in/blog/
-- Contact: https://superpest.in/contact/
+## Main Pages
 
-## Chemical Formulations and Safety Protocols
-We exclusively utilize HACCP-recommended, eco-friendly formulations strictly adhering to advanced Integrated Pest Management (IPM) guidelines:
-- Synthetic Pyrethroids: AlphaMethrin (specifically AlphaMethrin, not alpha cyper methrin), Cypermethrin, and Deltamethrin.
-- Systemic and Residual Insecticides: Imidacloprid, Chlorpyrifos, and Propoxur.
-- Fumigants and Rodenticides: ALP (Aluminum Phosphide) and Zinc Phosphide.
-## Services
+- [Super Pest Control Services homepage](https://superpest.in/): Company overview and access to all site sections.
+- [Pest control services](https://superpest.in/services/): Overview of residential, commercial, and specialized pest control services.
+- [Residential pest control](https://superpest.in/residential-pest-control/): Pest management services for homes and residential properties.
+- [Commercial pest control](https://superpest.in/commercial-pest-control/): Pest management programs for businesses and commercial facilities.
+- [Service locations](https://superpest.in/service-location/): Rajasthan cities and areas covered by the company.
 
-Super Pest Control Services provides termite and wood borer control, general pest control, rodent management, vector control and fogging, bed bug eradication, commercial fumigation, fly management systems, sanitization and disinfection, commercial AMC/IPM programs, and customized help for other pest problems.
+## Company Information
 
-## Industries and Facilities Served
-We provide targeted, audit-compliant pest management for a diverse range of environments:
-- Food and Beverage: Restaurants, Cafes, and Food Processing Units
-- Hospitality: Hotels, Resorts, and Guest Houses
-- Commercial and Retail: Supermarts, Shopping Malls, and Retail Stores
-- Storage and Logistics: Warehouses and Distribution Centers
-- Corporate and Institutional: Banks, Financial Institutions, and Corporate Offices
+- [About Super Pest Control Services](https://superpest.in/about/): Company background, approach, and credentials.
+- [Pest control blog](https://superpest.in/blog/): Pest prevention and treatment information.
+- [Contact and booking](https://superpest.in/contact/): Phone numbers, email address, offices, and service enquiries.
 
-## Certifications
-- IAF ISO 9001:2015 Certified
-- NIPHM Certified (National Institute of Plant Health Management)
-- IPCA Certified (Indian Pest Control Association)
-- Government Approved and MSME Registered
-- GST Registered Entity
+**Services:** The company provides termite and wood borer control, general pest control, rodent management, vector control and fogging, bed bug treatment, commercial fumigation, fly management systems, sanitization and disinfection, commercial AMC/IPM programs, and customized pest management.
 
-## Coverage
+**Coverage:** Service coverage includes Ajmer, Alwar, Balotra, Banswara, Baran, Barmer, Beawar, Bharatpur, Bhilwara, Bikaner, Bundi, Chittorgarh, Churu, Dausa, Deeg, Dholpur, Didwana-Kuchaman, Dungarpur, Hanumangarh, Jaipur, Jaisalmer, Jalore, Jhalawar, Jhunjhunu, Jodhpur, Karauli, Khairthal-Tijara, Kota, Kotputli-Behror, Nagaur, Pali, Phalodi, Pratapgarh, Rajsamand, Salumbar, Sawai Madhopur, Sikar, Sirohi, Sri Ganganagar, Tonk, and Udaipur.
 
-The company serves Ajmer, Alwar, Balotra, Banswara, Baran, Barmer, Beawar, Bharatpur, Bhilwara, Bikaner, Bundi, Chittorgarh, Churu, Dausa, Deeg, Dholpur, Didwana-Kuchaman, Dungarpur, Hanumangarh, Jaipur, Jaisalmer, Jalore, Jhalawar, Jhunjhunu, Jodhpur, Karauli, Khairthal-Tijara, Kota, Kotputli-Behror, Nagaur, Pali, Phalodi, Pratapgarh, Rajsamand, Salumbar, Sawai Madhopur, Sikar, Sirohi, Sri Ganganagar, Tonk, and Udaipur.
+Contact details: Phone +91 98280 66990 and +91 79765 72984; email superpestcontrolservices.jaipur@gmail.com; Jaipur office at 82/270, Sector-8, Pratap Nagar, Sanganer, Jaipur, Rajasthan 302033; Beawar office at 29, Fatehpuriya, Gomati Nagar, Beawar, Rajasthan 305901.
 
-## Contact
+## Optional
 
-- Phone: +91 98280 66990
-- Phone: +91 79765 72984
-- Email: superpestcontrolservices.jaipur@gmail.com
-- Jaipur office: 82/270, Sector-8, Pratap Nagar, Sanganer, Jaipur, Rajasthan 302033
-- Beawar office: 29, Fatehpuriya, Gomati Nagar, Beawar, Rajasthan 305901
-
-## Social Profiles
-
-- Instagram: https://www.instagram.com/superpestcontrolservices
-- Facebook: https://www.facebook.com/p/Super-Pest-Control-Services-100075474775254/
-- X: https://x.com/Superpestcontro
-- LinkedIn: https://www.linkedin.com/in/kishor-singh-10866a252/
+- [Instagram](https://www.instagram.com/superpestcontrolservices): Company social profile.
+- [Facebook](https://www.facebook.com/p/Super-Pest-Control-Services-100075474775254/): Company social profile.
+- [X](https://x.com/Superpestcontro): Company social profile.
+- [LinkedIn](https://www.linkedin.com/in/kishor-singh-10866a252/): Company professional profile.
