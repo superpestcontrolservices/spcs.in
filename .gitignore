@@ -1,0 +1,24 @@
+# Local credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*service_role*
+*service-role*
+
+# Backups and generated artifacts
+*.bak
+*.bak.*
+*.zip
+*.sql.bak
+*.map
+node_modules/
+dist/
+build/
+_site/
+.venv/
+supabase/.temp/
+.vercel/

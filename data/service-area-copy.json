@@ -1,0 +1,380 @@
+{
+  "copy_variants": [
+    {
+      "intro": "The service-area workbook lists {area} in {district} district. {pin_context} Super Pest Control Services serves this named area with residential and commercial pest-management services. The right treatment depends on the pest concern, property conditions and assessment; contact the team to discuss an inspection before selecting a service."
+    },
+    {
+      "intro": "For {area}, {district}, this page brings together the available pest-control service information and contact options for people requesting service in the area. {pin_context} Treatment selection and any preparation steps should be confirmed with the service team after they understand the property and pest activity."
+    },
+    {
+      "intro": "Super Pest Control Services lists {area} as a service area in {district} district. {pin_context} Residents and businesses can review the linked treatment pages, then ask the team which approach fits their property. Service recommendations, preparation and safety instructions are confirmed for each booking rather than assumed from the area name."
+    }
+  ],
+  "general_guides": [
+    {
+      "title": "Termite signs and next steps",
+      "paragraphs": [
+        "Termite activity can be difficult to assess from a single sign. Mud-like shelter tubes, damaged wood, or discarded wings may be reasons to arrange a closer inspection; these signs do not confirm an infestation on their own.",
+        "Avoid disturbing suspected activity before an assessment. A pest professional can inspect the affected material and explain whether a termite service is appropriate for the property."
+      ]
+    },
+    {
+      "title": "Reducing cockroach attractants",
+      "paragraphs": [
+        "Food residue, accessible water, and undisturbed gaps can make indoor spaces more inviting to cockroaches. Keeping food sealed, cleaning spills, and addressing leaks are practical steps that support a pest-management plan.",
+        "If activity continues, note where and when it is seen and request an assessment. The suitable treatment depends on the site and should be paired with clear preparation and aftercare instructions."
+      ]
+    },
+    {
+      "title": "Rodent prevention basics",
+      "paragraphs": [
+        "Store food and waste in closed containers and check for openings around doors, service lines, and storage areas. These housekeeping and exclusion steps can reduce access to food and shelter but do not replace an inspection when rodent activity is present.",
+        "A professional can assess signs such as droppings or gnawing and discuss a suitable rodent-management plan for the property."
+      ]
+    },
+    {
+      "title": "Bed bug inspection guidance",
+      "paragraphs": [
+        "When checking for possible bed bugs, inspect mattress seams, bed frames, and nearby furniture for insects or spotting. A single mark is not enough to identify the pest, so avoid moving potentially affected items between rooms.",
+        "If you suspect bed bugs, contact a pest professional for identification and treatment guidance. Follow the preparation and follow-up instructions provided for the selected service."
+      ]
+    },
+    {
+      "title": "Mosquito source reduction",
+      "paragraphs": [
+        "Mosquito management includes checking for standing water where larvae may develop and keeping water containers covered or emptied where practical. Door and window screens can also help limit entry indoors.",
+        "Fogging may be one part of a broader vector-control approach, but it does not remove breeding sources. Ask the service team which measures suit the site and current concern."
+      ]
+    },
+    {
+      "title": "Wood borer signs",
+      "paragraphs": [
+        "Small exit holes or fine powder around timber can have several causes and do not by themselves identify a wood-boring pest. Note the affected item and location, and avoid applying an unverified product to the wood.",
+        "An inspection can help identify the cause and determine whether wood borer control is suitable. Treatment recommendations depend on the material and extent of the issue."
+      ]
+    },
+    {
+      "title": "Planning commercial pest management",
+      "paragraphs": [
+        "Commercial pest management works best when inspection, sanitation, monitoring, and any agreed treatment are considered together. Keeping records of sightings and corrective actions can help a business and its service provider review recurring concerns.",
+        "For scheduled support, discuss the premises, operating hours, and service requirements before agreeing an AMC/IPM scope and visit schedule."
+      ]
+    },
+    {
+      "title": "Fly management and sanitation",
+      "paragraphs": [
+        "Covered waste, clean drains, and screened openings can support fly prevention in places where food is prepared or stored. These measures address common attractants and entry points but may not resolve an established pest problem by themselves.",
+        "A site assessment can help identify practical sanitation or exclusion steps and whether a fly-management system is suitable for the premises."
+      ]
+    },
+    {
+      "title": "Preparing for a pest inspection",
+      "paragraphs": [
+        "Before an inspection, note where pest activity occurs, when it is noticed, and which rooms or materials are affected. Share this information with the service team and ask what access or preparation is needed.",
+        "Do not assume that every treatment uses the same method. Follow the instructions given for the specific service and property."
+      ]
+    },
+    {
+      "title": "Keeping a pest-management plan useful",
+      "paragraphs": [
+        "A practical pest-management plan considers the pest identified, the property conditions, and the steps needed after service. Clear communication about access, occupants, and business operations helps the team discuss suitable timing and precautions.",
+        "For recurring commercial needs, review monitoring notes and agreed actions with the provider so any scheduled plan remains aligned with the premises."
+      ]
+    }
+  ],
+  "residential_commercial_variants": [
+    "For a home, describe the rooms or items affected and when activity is noticed. For a business, include the type of premises and any operating constraints. This helps the team discuss an assessment without assuming the same treatment suits every property.",
+    "Residential and commercial requests are both handled by discussing the pest concern and the site. Access, occupants, stored goods, and business hours may affect preparation and scheduling, so share relevant details when contacting the service team.",
+    "The service approach depends on the pest identified and the property conditions. Tell the team whether the request concerns a home or business, where activity has been seen, and whether the issue is recurring.",
+    "A useful service discussion starts with the affected area, signs noticed, and property type. For workplaces, mention access requirements and normal operating hours so any proposed visit can be considered against site needs.",
+    "Before recommending a treatment, the team needs to understand the concern and the property. Describe the rooms, materials, or work areas involved and ask which access or preparation steps apply.",
+    "Homes and business premises can have different access and service needs. Explain who uses the affected space, what pest activity you have observed, and whether any operating schedule should be considered.",
+    "When requesting service, identify the pest if known and describe where it appears. A residential or commercial assessment helps the team discuss a service scope appropriate to the specific property.",
+    "The service pages outline options for different pest concerns. Contact the team with details about the home or premises so they can discuss assessment, access, and suitable next steps."
+  ],
+  "process_variants": [
+    "The usual first step is to describe the pest activity and arrange a discussion or inspection. The team can explain the proposed scope, preparation requirements, and aftercare before the service is confirmed.",
+    "Share the location of the activity, how long it has been noticed, and any steps already taken. The service team can use those details to plan an assessment and explain the next steps for the property.",
+    "A service visit should begin with understanding the site and the concern. Ask what areas need access, whether occupants should take precautions, and which instructions apply before and after the selected treatment.",
+    "After discussing the concern, confirm the appointment details and any access requirements. The team should explain the recommended service and relevant preparation rather than relying on assumptions about the property.",
+    "Keep a note of sightings and affected areas to help explain the issue. During the service discussion, confirm the treatment scope, access arrangements, preparation, and any follow-up guidance.",
+    "Inspection and treatment needs vary by pest and property. Contact the team to discuss the concern, then follow the instructions provided for the specific service and appointment.",
+    "Before work begins, make sure the service scope and site arrangements are clear. Ask the team about preparation and aftercare, especially if the affected area is used by residents, staff, or customers.",
+    "The process is based on the information available about the pest and premises. Discuss what has been observed, confirm what the visit covers, and request clear instructions for any preparation."
+  ],
+  "amc_variants": [
+    "Businesses with recurring prevention needs can ask about an Annual Maintenance Contract or Integrated Pest Management plan. Scope and visit frequency should be agreed after the premises and service requirements are reviewed.",
+    "An AMC/IPM arrangement is a commercial option to discuss when a business wants planned pest-management support. Confirm the covered areas, monitoring expectations, corrective actions, and visit schedule with the provider.",
+    "For commercial properties, scheduled support can be discussed as part of an AMC/IPM plan. The agreed scope should reflect the premises, operating requirements, and pest concerns rather than a standard assumption.",
+    "If recurring visits are being considered, ask how the service plan will address inspection, monitoring, and follow-up. The business and provider should agree the schedule and covered work for the site.",
+    "Commercial customers can discuss planned pest-management visits and the services included. Requirements can differ between premises, so confirm the scope, frequency, and access arrangements before agreeing a plan.",
+    "An AMC/IPM plan may suit businesses seeking ongoing support, but its details need to be set for the property. Contact the team to discuss the premises and agree any monitoring or service schedule."
+  ],
+  "section_orders": [
+    ["residential_commercial", "process", "amc", "nearby_context"],
+    ["process", "residential_commercial", "nearby_context", "amc"],
+    ["nearby_context", "residential_commercial", "amc", "process"],
+    ["nearby_context", "process", "residential_commercial", "amc"],
+    ["amc", "residential_commercial", "process", "nearby_context"],
+    ["residential_commercial", "nearby_context", "process", "amc"],
+    ["process", "amc", "residential_commercial", "nearby_context"],
+    ["amc", "nearby_context", "residential_commercial", "process"]
+  ],
+  "faq_sets": [
+    {
+      "items": [
+        {
+          "question": "How can I request pest control in {area}?",
+          "answer": "Call either listed number or use the contact page. Share the pest concern and property details so the team can discuss an assessment."
+        },
+        {
+          "question": "Which services can I ask about for a property in {area}?",
+          "answer": "The service pages cover termite, general pest, rodent, vector, bed bug, wood borer and other pest-management options. Ask the team which service fits your concern."
+        },
+        {
+          "question": "Can I request pest control for a home in {area}?",
+          "answer": "Residential pest-control requests are listed for {area}, {district}. Contact the team to describe the property and the pest activity."
+        },
+        {
+          "question": "Are commercial pest-management services available in {area}?",
+          "answer": "Commercial pest-management requests can be discussed with the team. Any service scope or schedule should be agreed after reviewing the premises."
+        },
+        {
+          "question": "What should I share when booking for {area}?",
+          "answer": "Describe where the activity is occurring, the pest you suspect, and the property type. The team can then discuss assessment and next steps."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "How does a pest-control request for {area} get assessed?",
+          "answer": "The team discusses the pest activity and property conditions before recommending a service. Contact them to arrange an assessment and confirm the next steps."
+        },
+        {
+          "question": "Which pest-control options are listed for {area}?",
+          "answer": "Options include the linked pages for termite, rodent, bed bug, wood borer, vector control, general pest control, and commercial services."
+        },
+        {
+          "question": "Which pest treatments can I ask about in {area}?",
+          "answer": "The service pages cover termite, general pest, rodent, vector, bed bug, wood borer, fumigation, fly-management, disinfection and commercial AMC/IPM services."
+        },
+        {
+          "question": "Can a business request a scheduled plan in {area}?",
+          "answer": "Commercial customers can ask about Annual Maintenance Contract and Integrated Pest Management options. The scope should be agreed after reviewing the premises."
+        },
+        {
+          "question": "Can I ask about an AMC or IPM plan in {area}?",
+          "answer": "Commercial customers can ask about scheduled Annual Maintenance Contract and Integrated Pest Management options. Scope and frequency depend on the premises and agreed requirements."
+        },
+        {
+          "question": "How do I contact the team about service in {area}?",
+          "answer": "Call +91 98280-66990 or +91 79765-72984, or use the contact page to discuss a service request."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "Can the team help with different pest concerns in {area}?",
+          "answer": "The service pages cover several pest-management options. Share what you have noticed so the team can discuss an appropriate assessment."
+        },
+        {
+          "question": "What types of properties can request service in {area}?",
+          "answer": "The company provides residential and commercial pest management. Contact the team to discuss your property type and the pest activity."
+        },
+        {
+          "question": "Where can I read about services for {area}?",
+          "answer": "Use the service links on this page to review the available treatment categories, then contact the team about your property and pest concern."
+        },
+        {
+          "question": "Are recurring pest-management visits available in {area}?",
+          "answer": "Commercial customers can ask about scheduled AMC/IPM visits. Frequency and scope are set according to the premises and service requirements."
+        },
+        {
+          "question": "What preparation is needed before service in {area}?",
+          "answer": "Preparation depends on the selected treatment and property. Ask the service team for instructions before the appointment and follow the guidance provided."
+        },
+        {
+          "question": "How do I request an appointment in {area}?",
+          "answer": "Call either listed phone number or use the contact page. The team can discuss the property, pest concern, and appointment details."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "How do I book a pest-control assessment in {area}?",
+          "answer": "Contact the team by phone or through the contact page and describe the property and pest concern. They can discuss an assessment and appointment details."
+        },
+        {
+          "question": "What pest services can I review for {area}?",
+          "answer": "This page links to individual service information, including termite, rodent, bed bug, wood borer, vector control, and general pest management."
+        },
+        {
+          "question": "Is pest management available for homes in {area}?",
+          "answer": "Residential requests for {area}, {district}, can be discussed with the service team. The suitable scope depends on the property and pest activity."
+        },
+        {
+          "question": "Can a business in {area} ask about regular service?",
+          "answer": "Commercial customers can discuss scheduled service or AMC/IPM options. Agree the scope and frequency after the premises and requirements are reviewed."
+        },
+        {
+          "question": "Who can explain treatment preparation for {area}?",
+          "answer": "Ask the service team for instructions specific to the selected treatment and property before the appointment."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "What information helps arrange service in {area}?",
+          "answer": "Share the pest concern, where it has been noticed, and whether the property is residential or commercial. The team can discuss assessment and next steps."
+        },
+        {
+          "question": "Are termite and general pest services listed for {area}?",
+          "answer": "Termite Control and General Pest Control have individual service pages linked here. Contact the team to discuss which service may address the concern."
+        },
+        {
+          "question": "Can commercial premises in {area} request pest management?",
+          "answer": "Commercial pest-management requests can be discussed with the team. Service details depend on the site and agreed requirements."
+        },
+        {
+          "question": "What is an AMC/IPM service for a business in {area}?",
+          "answer": "It is a commercial option for planned pest-management support. Ask the provider to explain the proposed scope, monitoring, and visit schedule."
+        },
+        {
+          "question": "How can I contact Super Pest Control Services about {area}?",
+          "answer": "Call +91 98280-66990 or +91 79765-72984, or send a request through the contact page."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "Can I request an inspection for pest activity in {area}?",
+          "answer": "Yes. Contact the team to describe the activity and property, then discuss whether an inspection is the appropriate next step."
+        },
+        {
+          "question": "Where can I see the pest-control services for {area}?",
+          "answer": "The service links on this page lead to information about the available treatment categories and commercial options."
+        },
+        {
+          "question": "Does the same treatment suit every property in {area}?",
+          "answer": "No single approach should be assumed for every site. Recommendations depend on the pest concern and property conditions."
+        },
+        {
+          "question": "Can I ask about a recurring plan for a business in {area}?",
+          "answer": "Commercial customers can ask about AMC/IPM support. The provider and business should agree the scope and schedule for the premises."
+        },
+        {
+          "question": "What should I do before a service visit in {area}?",
+          "answer": "Confirm preparation and access instructions with the service team for the selected treatment and follow the guidance provided."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "How can residents arrange pest control in {area}?",
+          "answer": "Call either number listed on this page or use the contact link. Explain the pest concern and property details to discuss service."
+        },
+        {
+          "question": "Which service page should I start with for {area}?",
+          "answer": "Choose the page that matches the pest concern, or contact the team if you are unsure which category to review."
+        },
+        {
+          "question": "Are commercial pest services available in {area}?",
+          "answer": "Businesses can contact the team about pest-management services and discuss a scope suited to the premises."
+        },
+        {
+          "question": "How are appointment and treatment details confirmed in {area}?",
+          "answer": "Discuss the site and pest activity with the service team, then confirm the proposed scope, timing, preparation, and aftercare."
+        },
+        {
+          "question": "Can a business ask about scheduled pest-management visits in {area}?",
+          "answer": "Yes. Ask about AMC/IPM options and agree the visit frequency and service details based on the property's needs."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "How do I find out which pest service to request in {area}?",
+          "answer": "Review the service links or contact the team with details about the pest activity and premises. They can discuss an assessment and suitable next steps."
+        },
+        {
+          "question": "Can service be discussed for both homes and businesses in {area}?",
+          "answer": "Yes. Residential and commercial requests can be discussed with the service team; the scope depends on the property and pest concern."
+        },
+        {
+          "question": "What does an assessment for {area} help determine?",
+          "answer": "An assessment helps the team understand the pest concern and property conditions before discussing the service scope and preparation."
+        },
+        {
+          "question": "Where can businesses ask about ongoing pest support in {area}?",
+          "answer": "Commercial customers can contact the team to discuss an AMC/IPM plan, including the premises, requirements, and possible schedule."
+        },
+        {
+          "question": "How can I confirm the next steps for pest service in {area}?",
+          "answer": "Contact the team by phone or through the contact page and confirm the proposed service, appointment details, and any preparation guidance."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "What details should I provide about pest activity in {area}?",
+          "answer": "Describe the pest you suspect, where you have noticed activity, and the property type. The service team can discuss an assessment and next steps."
+        },
+        {
+          "question": "Can I compare service options before booking in {area}?",
+          "answer": "Yes. Review the linked service pages, then contact the team if you need help discussing which category fits the concern."
+        },
+        {
+          "question": "Does Super Pest Control Services handle commercial requests in {area}?",
+          "answer": "Commercial customers can contact the team to discuss pest-management requirements for their premises."
+        },
+        {
+          "question": "How can a business in {area} discuss planned visits?",
+          "answer": "Ask the team about commercial AMC/IPM options and agree a scope and schedule for the property."
+        },
+        {
+          "question": "How do I check preparation requirements for {area} service?",
+          "answer": "Preparation depends on the selected treatment and site. Confirm the instructions with the service team before the appointment."
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "question": "How can I get started with pest control in {area}?",
+          "answer": "Use the contact page or call either listed number to explain the concern and discuss an assessment for the property."
+        },
+        {
+          "question": "What treatment information is available for {area}?",
+          "answer": "The linked service pages describe pest-control categories. The team can discuss a suitable option after learning about the site and pest activity."
+        },
+        {
+          "question": "Can a residence in {area} request service?",
+          "answer": "Residential service requests can be discussed with Super Pest Control Services. Treatment and preparation depend on the property and concern."
+        },
+        {
+          "question": "Where can a commercial customer in {area} ask about AMC/IPM?",
+          "answer": "Contact the service team to discuss a commercial plan and agree the premises, requirements, and schedule."
+        },
+        {
+          "question": "Who provides service instructions for a property in {area}?",
+          "answer": "The service team can explain access, preparation, and aftercare instructions for the agreed treatment."
+        }
+      ]
+    }
+  ],
+  "area_details": {},
+  "page_overrides": {
+    "Ajmer|Hathi Bhata": {
+      "interactive_faqs": true,
+      "image_width": "50%"
+    }
+  }
+}

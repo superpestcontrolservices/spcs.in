@@ -1,0 +1,22 @@
+{
+  "name": "Super Pest Control Services",
+  "short_name": "Super Pest",
+  "description": "Professional residential and commercial pest control services across Rajasthan.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6f43",
+  "icons": [
+    {
+      "src": "/images/logo-42.webp",
+      "sizes": "42x41",
+      "type": "image/webp"
+    },
+    {
+      "src": "/images/logo-84.webp",
+      "sizes": "84x82",
+      "type": "image/webp"
+    }
+  ]
+}

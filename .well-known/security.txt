@@ -1,0 +1,5 @@
+Contact: admin@superpest.in
+Contact: https://www.superpest.in/contact/
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, hi
+Canonical: https://www.superpest.in/.well-known/security.txt

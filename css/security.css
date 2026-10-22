@@ -1,0 +1,16 @@
+.form-honeypot {
+    position: absolute !important;
+    left: -10000px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+
+.form-status {
+    min-height: 1.5em;
+    margin: 0.75rem 0;
+}
+
+.form-status-error {
+    color: #a12622;
+}

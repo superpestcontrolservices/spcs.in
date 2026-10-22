@@ -1,0 +1,7 @@
+.service-detail-page .content-section:has(> :only-child) {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.service-detail-page .content-section > .feature-list {
+    grid-column: 1 / -1;
+}
