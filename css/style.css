@@ -323,6 +323,14 @@ img {
         0 5px 20px rgba(70, 100, 50, 0.08);
 }
 
+.logo-mark img {
+    width: 42px;
+    height: auto;
+    max-width: 100%;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
 .logo-text {
     display: flex;
 
@@ -338,7 +346,7 @@ img {
 }
 
 .logo-text small {
-    color: var(--green);
+    color: #3f6517;
 
     font-size: 8px;
 
@@ -883,7 +891,7 @@ img {
 .review-stars {
     margin-bottom: 22px;
 
-    color: #d4a72c;
+    color: #7a5700;
 
     font-size: 18px;
 
@@ -903,7 +911,7 @@ img {
 .review-card strong {
     margin-top: 24px;
 
-    color: var(--green-dark);
+    color: #3f6517;
 
     font-size: 12px;
 }
@@ -1387,7 +1395,7 @@ img {
 }
 
 .footer-brand p {
-    color: var(--muted);
+    color: #4f5b51;
 
     max-width: 300px;
 
@@ -1461,7 +1469,7 @@ img {
 
 .footer-column a,
 .footer-column p {
-    color: var(--muted);
+    color: #4f5b51;
 
     font-size: 12px;
 
@@ -1481,7 +1489,7 @@ img {
 
     border-top: 1px solid var(--border);
 
-    color: #7a847d;
+    color: #4f5b51;
 
     font-size: 11px;
 }

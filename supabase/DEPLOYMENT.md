@@ -14,7 +14,7 @@ This function is not deployed by this change. Configure and review the project b
    supabase link --project-ref YOUR_PROJECT_REF
    ```
 
-7. Set `TURNSTILE_SECRET_KEY`, `RATE_LIMIT_HMAC_SECRET`, and the Resend values in **Project Settings → Edge Functions → Secrets** (or use the Supabase CLI’s protected secret workflow). Confirm the platform-provided `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are available to the function. Never put service-role or Resend keys in website files.
+7. Set `TURNSTILE_SECRET_KEY`, `RATE_LIMIT_HMAC_SECRET`, and the Resend values in **Project Settings → Edge Functions → Secrets** (or use the Supabase CLI’s protected secret workflow). Supabase provides `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` to the Edge Function automatically. Never put service-role or Resend keys in website files.
 8. Review `supabase/config.toml`. `verify_jwt = false` is required for this public endpoint because the browser uses a publishable API key, not a user JWT. The function instead checks the site origin, Turnstile response, input validation, and server-side IP rate limit. Keep the service-role key exclusively in function secrets.
 9. Deploy only after reviewing the code and completing a staging test:
 

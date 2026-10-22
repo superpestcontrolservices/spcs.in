@@ -7,3 +7,6 @@
 .split-section{max-width:1200px;margin:0 auto}.campaign-main .split-section{width:min(1060px,92%)}
 
 .split-media{max-width:560px;justify-self:center}
+
+/* PageSpeed contrast and responsive logo fixes */
+.logo-mark img{width:42px;height:auto;max-width:100%;flex:0 0 auto;object-fit:contain}.logo-text small,.review-card strong{color:#3f6517}.review-stars{color:#7a5700}.footer-brand p,.footer-column a,.footer-column p,.footer-bottom{color:#4f5b51}
