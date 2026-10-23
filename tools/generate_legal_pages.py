@@ -17,6 +17,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from tools.site_footer import apply_main_footer
+from tools.site_schema import website_schema
 
 BASE_URL = "https://www.superpest.in"
 SITEMAP_URL = "https://www.superpest.in"
@@ -159,6 +160,7 @@ def render_page(
     jsonld_data = {
         "@context": "https://schema.org",
         "@graph": [
+            website_schema(),
             {
                 "@type": "WebPage",
                 "@id": f"{url}#webpage",
@@ -231,7 +233,7 @@ def render_page(
 </head>
 <body>
 <header class="header"><nav class="navbar" aria-label="Main navigation">
-    <a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a>
+    <a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="eager" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a>
     <div class="nav-links"><a href="/">Home</a><a href="/services/">Services</a><a href="/residential-pest-control/">Residential</a><a href="/commercial-pest-control/">Commercial</a><a href="/about/">About</a><a href="/blog/">Blogs</a><a href="/service-location/">Service Location</a><a href="/contact/">Contact</a></div>
     <a href="/contact/" class="nav-btn">Book Service</a>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu">☰</button>
@@ -244,7 +246,7 @@ def render_page(
     {section_html}
 </main>
 <footer class="footer"><div class="footer-grid">
-    <div class="footer-brand"><a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a><p>Super Pest Control Services</p></div>
+    <div class="footer-brand"><a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="lazy" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a><p>Super Pest Control Services</p></div>
     <div class="footer-column"><h3>Quick Links</h3><a href="/">Home</a><a href="/services/">Services</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/service-location/">Service Location</a><a href="/contact/">Contact</a>{FOOTER_LINKS}</div>
     <div class="footer-column"><h3>Services</h3><a href="/services/termite-control/">Termite Control</a><a href="/services/general-pest-control/">General Pest Control</a><a href="/services/rodent-management/">Rodent Management</a><a href="/services/cockroach-control/">Cockroach Control</a><a href="/services/wasp-hornet-nest-removal/">Wasp &amp; Hornet Nest Removal</a><a href="/contact/">Any Other Pests?</a></div>
     <div class="footer-column"><h3>Contact</h3><p>+91 98280 66990</p><p>+91 79765 72984</p><p>superpestcontrolservices.jaipur@gmail.com</p><p>Jaipur, Rajasthan</p></div>

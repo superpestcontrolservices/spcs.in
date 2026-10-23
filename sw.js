@@ -1,13 +1,10 @@
-const CACHE_NAME = "super-pest-static-v12";
+const CACHE_NAME = "super-pest-static-v13";
 const STATIC_ASSETS = [
     "/css/style.min.css",
     "/js/script.min.js",
     "/js/location-reviews.js",
     "/images/Fogging%20treatment-662.webp",
-    "/images/Fogging%20treatment-800.webp",
-    "/images/Fogging%20treatment-1600.webp",
     "/images/NIPHM%20Event-800.webp",
-    "/images/NIPHM%20Event-1600.webp",
     "/images/ajmer-800.webp",
     "/images/ajmer-1400.webp",
     "/images/logo-42.webp",

@@ -58,6 +58,8 @@ class FakeForm extends FakeElement {
         this.elements = { namedItem: (name) => this.fields.get(name) || null };
         this.button = new FakeElement("button");
         this.button.type = "submit";
+        this.button.textContent = "Send Enquiry";
+        this.button.disabled = false;
         this.turnstileResponse = { value: "verified-test-token" };
         this.status = null;
         this.widget = null;
@@ -225,5 +227,23 @@ test("clearly reports when the enquiry is stored but its email alert fails", asy
     assert.match(form.status.textContent, /enquiry was received/i);
     assert.match(form.status.textContent, /email alert could not be sent/i);
     assert.equal(form.resetCount, resetCountBefore + 1);
+    nextResponse = { ok: true, status: 204 };
+});
+
+test("shows the Edge Function error and restores the submit button after failure", async () => {
+    nextResponse = {
+        ok: false,
+        status: 503,
+        async text() {
+            return JSON.stringify({ message: "Unable to submit enquiry." });
+        }
+    };
+    clock += 5000;
+    submitForm();
+    await new Promise((resolve) => setImmediate(resolve));
+
+    assert.match(form.status.textContent, /HTTP 503\): Unable to submit enquiry\./);
+    assert.equal(form.button.disabled, false);
+    assert.equal(form.button.textContent, "Send Enquiry");
     nextResponse = { ok: true, status: 204 };
 });

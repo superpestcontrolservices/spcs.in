@@ -31,6 +31,7 @@ from tools.generate_service_areas import (
 from tools.site_footer import apply_main_footer
 from tools.page_images import image_for_topic
 from tools.site_claims import approved_claim
+from tools.site_schema import website_schema
 
 
 ROOT = PROJECT_ROOT
@@ -178,6 +179,7 @@ def schema_page(
     data = {
         "@context": "https://schema.org",
         "@graph": [
+            website_schema(),
             {
                 "@type": "Service",
                 "@id": f"{url}#service",
@@ -274,7 +276,7 @@ def page_head(
 </head>
 <body>
 <header class="header"><nav class="navbar" aria-label="Main navigation">
-    <a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a>
+    <a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="eager" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a>
     <div class="nav-links"><a href="/">Home</a><a href="/services/">Services</a><a href="/residential-pest-control/">Residential</a><a href="/commercial-pest-control/">Commercial</a><a href="/about/">About</a><a href="/blog/">Blogs</a><a href="/service-location/">Service Location</a><a href="/contact/">Contact</a></div>
     <a href="/contact/" class="nav-btn">Book Service</a>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu">☰</button>
@@ -287,7 +289,7 @@ def page_footer() -> str:
     <div class="footer-grid">
         <div class="footer-brand">
             <a href="/" class="logo">
-                <div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div>
+                <div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="lazy" alt="Super Pest Control Services"></div>
                 <div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div>
             </a>
             <p>Super Pest Control Services provides pest-management services for residential and commercial properties. Treatment recommendations and precautions depend on the pest and premises.</p>
@@ -517,15 +519,6 @@ def render_city_page(
         (district, district_path(district)),
     ]
     schema_breadcrumbs = breadcrumbs + [(item["topic"] + " in " + area, url_path)]
-    schema = schema_page(
-        url,
-        item["topic"] + " in " + area + " | Super Pest Control Services",
-        item["topic"] + " serving " + area + ", " + district + ". Discuss an inspection, site-specific treatment and preparation guidance.",
-        district,
-        schema_area,
-        schema_breadcrumbs,
-        faq_items,
-    )
     service_cards = "\n".join(
         f'<li>{anchor(SERVICE_LABELS[key][0] + " in Rajasthan", SERVICE_LABELS[key][1])}</li>'
         for key in item["services"]
@@ -549,6 +542,15 @@ def render_city_page(
         description = f'Pest control serving {area}, {district}. Request an inspection for {pest.lower()} and discuss access and preparation.'
     if len(description) > 155:
         description = description[:152].rsplit(" ", 1)[0].rstrip(" ,;:") + "."
+    schema = schema_page(
+        url,
+        title,
+        description,
+        district,
+        schema_area,
+        schema_breadcrumbs,
+        faq_items,
+    )
     image_filename, image_alt = image_for_topic(item["topic"] + " " + customer["id"])
     content = f"""{page_head(url,title,description,schema,image_filename)}
 {main_styles()}

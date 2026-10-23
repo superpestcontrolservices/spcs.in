@@ -1,13 +1,13 @@
 {
   "copy_variants": [
     {
-      "intro": "The service-area workbook lists {area} in {district} district. {pin_context} Super Pest Control Services serves this named area with residential and commercial pest-management services. The right treatment depends on the pest concern, property conditions and assessment; contact the team to discuss an inspection before selecting a service."
+      "intro": "Super Pest Control Services covers {area} in {district} district. {pin_context} Super Pest Control Services serves this named area with residential and commercial pest-management services. ISO 9001:2015, IPCA, and NIPHM certified treatments starting at ₹699 for 1 BHK homes, with termite warranties of up to 10 years subject to written contract terms and audit-ready commercial AMCs"
     },
     {
       "intro": "For {area}, {district}, this page brings together the available pest-control service information and contact options for people requesting service in the area. {pin_context} Treatment selection and any preparation steps should be confirmed with the service team after they understand the property and pest activity."
     },
     {
-      "intro": "Super Pest Control Services lists {area} as a service area in {district} district. {pin_context} Residents and businesses can review the linked treatment pages, then ask the team which approach fits their property. Service recommendations, preparation and safety instructions are confirmed for each booking rather than assumed from the area name."
+      "intro": "Super Pest Control Services lists {area} as a service area in {district} district. {pin_context} Residents and businesses can review the linked treatment pages, then ask the team which approach fits their property. We deploy CIB&RC-approved formulations—including Imidacloprid 30.5% SC, odorless Fipronil gel, and Alphacypermethrin—backed by a written warranty and starting at ₹699."
     }
   ],
   "general_guides": [

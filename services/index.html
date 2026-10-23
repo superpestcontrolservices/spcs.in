@@ -16,11 +16,31 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://www.superpest.in/#website",
+      "url": "https://www.superpest.in/",
+      "name": "Super Pest Control Services",
+      "description": "Professional residential and commercial pest control services across Rajasthan.",
+      "publisher": {
+        "@id": "https://www.superpest.in/#business"
+      },
+      "sameAs": [
+        "https://www.facebook.com/p/Super-Pest-Control-Services-100075474775254/",
+        "https://www.instagram.com/superpestcontrolservices?igsh=YzM3cmN0b2EwdGxh",
+        "https://x.com/Superpestcontro",
+        "https://www.linkedin.com/in/kishor-singh-10866a252/"
+      ],
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "target": "https://www.superpest.in/contact/"
+      }
+    },
+    {
       "@type": "CollectionPage",
       "@id": "https://www.superpest.in/services/#webpage",
       "url": "https://www.superpest.in/services/",
-      "name": "Our Services | Super Pest Control",
-      "description": "Professional termite, cockroach, rodent, mosquito, bed bug, fumigation and commercial pest control services.",
+      "name": "Pest Control Services in Rajasthan | Termite, Cockroach & Rat",
+      "description": "Explore residential, commercial & industrial pest control services by Super Pest Control in Rajasthan: termites, cockroaches, rodents, bed bugs & AMC.",
       "isPartOf": {
         "@id": "https://www.superpest.in/#website"
       },
@@ -66,7 +86,8 @@
     <link rel="icon" type="image/webp" href="images/Logooo.webp">
 
     <link rel="preload" href="css/style.min.css?v=20261022-4" as="style" fetchpriority="high">
-    <link rel="stylesheet" href="css/style.min.css?v=20261022-4">
+    <link rel="stylesheet" href="css/style.min.css?v=20261022-4" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.min.css?v=20261022-4"></noscript>
 
     <style>
         .service-card h3 a {
@@ -111,7 +132,7 @@
         <a href="/" class="logo">
 
             <div class="logo-mark">
-                <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services">
+                <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services" loading="eager">
             </div>
 
             <div class="logo-text">
@@ -437,7 +458,7 @@ Inspection-led centipede management with guidance on damp areas, harborage, entr
                 <a href="/" class="logo">
 
                     <div class="logo-mark">
-                        <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services">
+                        <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services" loading="lazy">
                     </div>
 
                     <div class="logo-text">
@@ -449,8 +470,7 @@ Inspection-led centipede management with guidance on damp areas, harborage, entr
 
                 <p>
                      
-                    We’ve grown into a comprehensive PAN-India pest defense network, 
-                    safeguarding everything from cozy apartments to massive industrial complexes. 
+                    We serve customers across Rajasthan and can check partner-network availability elsewhere in India; service depends on location and is confirmed on request. 
                     
                 </p>
 
@@ -556,7 +576,7 @@ Inspection-led centipede management with guidance on damp areas, harborage, entr
     </footer>
 
 
-<script src="/js/script.min.js?v=20261022-3" defer></script>
+<script src="/js/script.min.js?v=20261024-2" defer></script>
 
 </body>
 

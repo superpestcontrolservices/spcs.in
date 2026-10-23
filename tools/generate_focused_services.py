@@ -20,6 +20,7 @@ if str(ROOT) not in sys.path:
 
 from tools.site_footer import apply_main_footer
 from tools.page_images import image_for_topic
+from tools.site_schema import website_schema
 
 DATA = ROOT / "data" / "focused-services.json"
 SITEMAP = ROOT / "sitemap.xml"
@@ -97,6 +98,7 @@ def render_schema(page: dict[str, Any], url: str) -> str:
         for question, answer in page["faqs"]
     ]
     graph = [
+        website_schema(),
         {
             "@type": "WebPage",
             "@id": f"{url}#webpage",
@@ -284,7 +286,7 @@ def render_page(page: dict[str, Any]) -> str:
 </head>
 <body>
 <header class="header"><nav class="navbar" aria-label="Main navigation">
-    <a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a>
+    <a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="eager" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a>
     <div class="nav-links"><a href="/">Home</a><a href="/services/" class="active">Services</a><a href="/residential-pest-control/">Residential</a><a href="/commercial-pest-control/">Commercial</a><a href="/about/">About</a><a href="/blog/">Blogs</a><a href="/service-location/">Service Location</a><a href="/contact/">Contact</a></div>
     <a href="/contact/" class="nav-btn">Book Service</a>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu">☰</button>
@@ -305,7 +307,7 @@ def render_page(page: dict[str, Any]) -> str:
     <p class="focused-updated">Last updated: {updated}</p>
 </main>
 <footer class="footer"><div class="footer-grid">
-    <div class="footer-brand"><a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a><p>Super Pest Control Services provides pest-management services for residential and commercial properties. Treatment recommendations and precautions depend on the pest and premises.</p></div>
+    <div class="footer-brand"><a href="/" class="logo"><div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="lazy" alt="Super Pest Control Services"></div><div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div></a><p>Super Pest Control Services provides pest-management services for residential and commercial properties. Treatment recommendations and precautions depend on the pest and premises.</p></div>
     <div class="footer-column"><h3>Quick Links</h3><a href="/">Home</a><a href="/services/">Pest control services</a><a href="/commercial-pest-control/">Commercial pest control and customer types</a><a href="/about/">About Super Pest Control Services</a><a href="/blog/">Pest management articles</a><a href="/service-location/">Pest control service locations</a><a href="/contact/">Contact Super Pest Control Services</a><!-- BEGIN GENERATED LEGAL FOOTER LINKS --><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-and-conditions/">Terms &amp; Conditions</a><!-- END GENERATED LEGAL FOOTER LINKS --></div>
     <div class="footer-column"><h3>Services</h3><a href="/services/termite-control/">Termite Control</a><a href="/services/general-pest-control/">General Pest Control</a><a href="/services/ant-control/">Ant Control</a><a href="/services/pre-construction-anti-termite-treatment/">Pre-Construction Anti-Termite Treatment</a><a href="/services/termite-piping-system/">Termite Piping System</a><a href="/services/wood-borer-control/">Wood Borer Control</a><a href="/services/wasp-hornet-nest-removal/">Wasp &amp; Hornet Nest Removal</a><a href="/contact/">Any Other Pests?</a></div>
     <div class="footer-column"><h3>Contact</h3><a href="tel:+919828066990">Call +91 98280 66990</a><a href="tel:+917976572984">Call +91 79765 72984</a><a href="mailto:superpestcontrolservices.jaipur@gmail.com">Email Super Pest Control Services</a><p>Jaipur, Rajasthan</p></div>

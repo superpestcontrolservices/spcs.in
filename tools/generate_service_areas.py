@@ -27,6 +27,7 @@ if str(ROOT) not in sys.path:
 from tools.site_footer import apply_main_footer
 from tools.page_images import image_for_district
 from tools.site_claims import approved_claim, load_site_claims
+from tools.site_schema import website_schema
 
 
 COPY_FILE = ROOT / "data" / "service-area-copy.json"
@@ -303,7 +304,7 @@ def fill(template: str, row: dict[str, str], siblings: list[dict[str, str]]) -> 
         **row,
         "siblings": ", ".join(item["area"] for item in siblings),
         "pin_context": (
-            f"The supplied service-area data lists PIN code {row['pin']} for "
+            f"Our local pest control technicians cover PIN code {row['pin']} for "
             f"{row['area']}, {row['district']}."
             if row["pin"]
             else ""
@@ -504,6 +505,7 @@ def structured_data(
     data = {
         "@context": "https://schema.org",
         "@graph": [
+            website_schema(),
             {
                 "@type": "LocalBusiness",
                 "@id": f"{BASE_URL}/#business",
@@ -632,7 +634,7 @@ def render_page(
             amc[variation_seed(row, "amc") % len(amc)].format(**row)
         ]
         nearby_paragraphs = [
-            f"The workbook lists these nearby service areas in {row['district']}: "
+            f"Our rapid-response teams also serve these nearby areas in {row['district']}: "
             + ", ".join(item["area"] for item in siblings)
             + ". Use the links below to explore their service pages."
         ]
@@ -842,7 +844,7 @@ def render_page(
         else ""
     )
     pin_data_paragraph = (
-        f"<p>The supplied service-area data lists PIN code <strong>{e(row['pin'])}</strong> "
+        f"<p>Our local pest control technicians cover PIN code <strong>{e(row['pin'])}</strong> "
         f"for {e(row['area'])}, {e(row['district'])}.</p>"
         if row["pin"]
         else ""
@@ -879,7 +881,7 @@ def render_page(
     <header class="header">
         <nav class="navbar" aria-label="Main navigation">
             <a href="/" class="logo">
-                <div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div>
+                <div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="eager" alt="Super Pest Control Services"></div>
                 <div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div>
             </a>
             <div class="nav-links">
@@ -946,7 +948,7 @@ def render_page(
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="/" class="logo">
-                    <div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" alt="Super Pest Control Services"></div>
+                    <div class="logo-mark"><img src="/images/logo-42.webp" width="42" height="41" loading="lazy" alt="Super Pest Control Services"></div>
                     <div class="logo-text"><strong>SUPER PEST</strong><small>CONTROL SERVICES</small></div>
                 </a>
                 <p>{e(approved_claim("experienceWording") or "Pest management services for homes, businesses and institutions.")}</p>

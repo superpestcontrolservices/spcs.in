@@ -159,7 +159,6 @@ function configureForm(form) {
 
     const turnstileContainer = ensureTurnstileContainer(form);
     let startedAt = Date.now();
-    let widgetId;
     let submitting = false;
 
     const configurationAvailable =
@@ -168,7 +167,7 @@ function configureForm(form) {
     if (configurationAvailable) {
         loadTurnstile()
             .then((turnstile) => {
-                widgetId = turnstile.render(turnstileContainer, {
+                turnstile.render(turnstileContainer, {
                     sitekey: securityConfig.turnstileSiteKey,
                     action: "enquiry"
                 });
@@ -200,8 +199,12 @@ function configureForm(form) {
         }
 
         const submitButton = form.querySelector('button[type="submit"]');
+        const submitButtonText = submitButton?.textContent ?? "";
         submitting = true;
-        if (submitButton) submitButton.disabled = true;
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+        }
         setStatus(status, "", false);
 
         try {
@@ -219,7 +222,23 @@ function configureForm(form) {
                 })
             });
 
-            if (!response.ok) throw new Error("Enquiry submission failed.");
+            if (!response.ok) {
+                const responseBody = await response.text();
+                let responseMessage = responseBody;
+                try {
+                    const result = JSON.parse(responseBody);
+                    if (typeof result.message === "string") {
+                        responseMessage = result.message;
+                    }
+                } catch {
+                    responseMessage = responseBody;
+                }
+                throw new Error(
+                    `Enquiry submission failed (HTTP ${response.status})${
+                        responseMessage ? `: ${responseMessage}` : ""
+                    }`
+                );
+            }
 
             if (response.status === 202) {
                 const result = await response.json();
@@ -232,17 +251,15 @@ function configureForm(form) {
             }
             form.reset();
             startedAt = Date.now();
-            if (widgetId !== undefined && window.turnstile) {
-                window.turnstile.reset(widgetId);
-            }
-        } catch {
-            setStatus(status, GENERIC_ERROR, true);
-            if (widgetId !== undefined && window.turnstile) {
-                window.turnstile.reset(widgetId);
-            }
+        } catch (error) {
+            setStatus(status, error instanceof Error ? error.message : String(error), true);
         } finally {
             submitting = false;
-            if (submitButton) submitButton.disabled = false;
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = submitButtonText;
+            }
+            window.turnstile?.reset();
         }
     });
 }

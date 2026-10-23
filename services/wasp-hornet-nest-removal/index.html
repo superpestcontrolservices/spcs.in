@@ -16,6 +16,42 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://www.superpest.in/#website",
+      "url": "https://www.superpest.in/",
+      "name": "Super Pest Control Services",
+      "description": "Professional residential and commercial pest control services across Rajasthan.",
+      "publisher": {
+        "@id": "https://www.superpest.in/#business"
+      },
+      "sameAs": [
+        "https://www.facebook.com/p/Super-Pest-Control-Services-100075474775254/",
+        "https://www.instagram.com/superpestcontrolservices?igsh=YzM3cmN0b2EwdGxh",
+        "https://x.com/Superpestcontro",
+        "https://www.linkedin.com/in/kishor-singh-10866a252/"
+      ],
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "target": "https://www.superpest.in/contact/"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.superpest.in/services/wasp-hornet-nest-removal/#webpage",
+      "url": "https://www.superpest.in/services/wasp-hornet-nest-removal/",
+      "name": "Wasp & Hornet Nest Removal in Rajasthan | Safe Experts",
+      "description": "Safe, professional wasp and hornet nest removal across Rajasthan for homes, apartments, schools, hotels & factories. Call +91 98280-66990 today.",
+      "isPartOf": {
+        "@id": "https://www.superpest.in/#website"
+      },
+      "about": {
+        "@id": "https://www.superpest.in/services/wasp-hornet-nest-removal#service"
+      },
+      "publisher": {
+        "@id": "https://www.superpest.in/#business"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -125,9 +161,11 @@
 
     <link rel="icon" type="image/webp" href="/images/Logooo.webp">
     <link rel="preload" href="/css/style.min.css?v=20261022-4" as="style" fetchpriority="high">
-    <link rel="stylesheet" href="/css/style.min.css?v=20261022-4">
+    <link rel="stylesheet" href="/css/style.min.css?v=20261022-4" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/style.min.css?v=20261022-4"></noscript>
     <link rel="preload" href="/css/service-detail-layout.css" as="style" fetchpriority="high">
-    <link rel="stylesheet" href="/css/service-detail-layout.css">
+    <link rel="stylesheet" href="/css/service-detail-layout.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/service-detail-layout.css"></noscript>
     <style>
         .wasp-main {
             width: min(1160px, 92%);
@@ -293,7 +331,7 @@
     <nav class="navbar" aria-label="Main navigation">
         <a href="/" class="logo">
             <div class="logo-mark">
-                <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services">
+                <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services" loading="eager">
             </div>
             <div class="logo-text">
                 <strong>SUPER PEST</strong>
@@ -356,7 +394,7 @@
 
     <section class="section content-section">
         <div>
-            <div class="split-section"><div class="split-text"><h2>Common Paper Wasps, Yellow Jackets &amp; Hornets Treated in Rajasthan</h2><p>We assess paper wasps with open umbrella-shaped nests, hornets with large nests often found in trees or wall cavities, and mud-dauber wasps that make mud tubes on walls and ceilings.</p></div><figure class="split-media"><img src="/images/wasp-nest-balcony-ceiling-before.webp" alt="Wasp Hornet Nest Removal service context: Wasp nest visible below a balcony ceiling before removal." loading="lazy" width="1544" height="2058" decoding="async" fetchpriority="high" class="split-img"><figcaption>Nest before professional removal.</figcaption></figure></div>
+            <div class="split-section"><div class="split-text"><h2>Common Paper Wasps, Yellow Jackets &amp; Hornets Treated in Rajasthan</h2><p>We assess paper wasps with open umbrella-shaped nests, hornets with large nests often found in trees or wall cavities, and mud-dauber wasps that make mud tubes on walls and ceilings.</p></div><figure class="split-media"><img src="/images/wasp-nest-balcony-ceiling-before.webp" alt="Wasp Hornet Nest Removal service context: Wasp nest visible below a balcony ceiling before removal." loading="lazy" width="1544" height="2058" decoding="async" class="split-img"><figcaption>Nest before professional removal.</figcaption></figure></div>
         </div>
     </section>
 
@@ -544,7 +582,7 @@
                 <a href="/" class="logo">
 
                     <div class="logo-mark">
-                        <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services">
+                        <img src="/images/logo-42.webp" srcset="/images/logo-42.webp 42w, /images/logo-84.webp 84w" sizes="42px" width="42" height="41" alt="Super Pest Control Services" loading="lazy">
                     </div>
 
                     <div class="logo-text">
@@ -556,8 +594,7 @@
 
                 <p>
                      
-                    We’ve grown into a comprehensive PAN-India pest defense network, 
-                    safeguarding everything from cozy apartments to massive industrial complexes. 
+                    We serve customers across Rajasthan and can check partner-network availability elsewhere in India; service depends on location and is confirmed on request. 
                     
                 </p>
 
@@ -661,6 +698,6 @@
         </div>
 
     </footer>
-<script src="/js/script.min.js?v=20261022-3" defer></script>
+<script src="/js/script.min.js?v=20261024-2" defer></script>
 </body>
 </html>

@@ -20,15 +20,13 @@ const MAX_LENGTHS = {
     message: 1000
 } as const;
 
-function corsHeaders(origin: string | null): HeadersInit {
+function corsHeaders(_origin: string | null): HeadersInit {
     const headers: Record<string, string> = {
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "apikey, content-type",
         "Access-Control-Allow-Methods": "POST, OPTIONS",
         "Vary": "Origin"
     };
-    if (origin && allowedOrigins.has(origin)) {
-        headers["Access-Control-Allow-Origin"] = origin;
-    }
     return headers;
 }
 
