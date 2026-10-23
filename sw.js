@@ -1,4 +1,4 @@
-const CACHE_NAME = "super-pest-static-v13";
+const CACHE_NAME = "super-pest-static-v15";
 const STATIC_ASSETS = [
     "/css/style.min.css",
     "/js/script.min.js",

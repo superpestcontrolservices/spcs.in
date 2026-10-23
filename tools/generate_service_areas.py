@@ -871,8 +871,7 @@ def render_page(
     <meta name="twitter:image" content="{image_url}">
     {schema_script}
     <link rel="icon" type="image/webp" href="/images/Logooo.webp">
-    <link rel="preload" href="/css/style.min.css" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
+    <link rel="stylesheet" href="/css/style.min.css?v=20261024-4" fetchpriority="high">
     {AREA_STYLE}
     {faq_style}
 </head>

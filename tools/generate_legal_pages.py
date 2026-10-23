@@ -212,8 +212,7 @@ def render_page(
     <meta name="twitter:description" content="{html.escape(description, quote=True)}">
     {jsonld}
     <link rel="icon" type="image/webp" href="/images/Logooo.webp">
-    <link rel="preload" href="/css/style.min.css" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
+    <link rel="stylesheet" href="/css/style.min.css?v=20261024-4" fetchpriority="high">
     <style>
         .legal-main{{width:min(800px,92%);margin:0 auto;padding:120px 0 72px;color:#334239;line-height:1.75}}
         .legal-main h1,.legal-main h2,.legal-main h3{{color:#173e2e}}

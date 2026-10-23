@@ -243,8 +243,7 @@ def render_page(page: dict[str, Any]) -> str:
     <meta name="twitter:image" content="{BASE_URL}/images/{image_filename}">
     {schema}
     <link rel="icon" type="image/webp" href="/images/Logooo.webp">
-    <link rel="preload" href="/css/style.min.css" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
+    <link rel="stylesheet" href="/css/style.min.css?v=20261024-4" fetchpriority="high">
     <style>
         .focused-main{{width:min(1060px,92%);margin:0 auto;padding:118px 0 72px;color:#334239;line-height:1.75}}
         .focused-main h1,.focused-main h2,.focused-main h3{{color:#173e2e}}

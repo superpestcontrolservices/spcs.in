@@ -5,7 +5,7 @@
     --card-light: #ffffff;
 
     --green: #79b82a;
-    --green-dark: #5d951b;
+    --green-dark: #3f6816;
 
     --white: #111811;
     --muted: #69736b;
@@ -325,7 +325,8 @@ img {
 
 .logo-mark img {
     width: 42px;
-    height: auto;
+    height: 41px;
+    aspect-ratio: 42 / 41;
     max-width: 100%;
     flex: 0 0 auto;
     object-fit: contain;
@@ -505,7 +506,7 @@ img {
 }
 
 .hero h1 span {
-    color: var(--green);
+    color: var(--green-dark);
 }
 
 .hero-content>p {
