@@ -89,6 +89,7 @@ def page_url(page: dict[str, Any]) -> str:
 
 
 def render_schema(page: dict[str, Any], url: str) -> str:
+    url = f"{url.rstrip('/')}/"
     faq = [
         {
             "@type": "Question",

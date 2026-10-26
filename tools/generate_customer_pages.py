@@ -176,6 +176,7 @@ def schema_page(
     breadcrumbs: list[tuple[str, str]],
     faq_items: list[tuple[str, str]],
 ) -> str:
+    url = f"{url.rstrip('/')}/"
     data = {
         "@context": "https://schema.org",
         "@graph": [
